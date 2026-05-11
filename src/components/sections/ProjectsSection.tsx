@@ -174,35 +174,7 @@ export function ProjectsSection() {
                     )}
                   </div>
 
-                  {/* Stats/Features Visual */}
-                  <div className="grid grid-cols-2 gap-3">
-                    {['Features', 'Performance', 'Users', 'Uptime'].map((item, idx) => (
-                      <motion.div
-                        key={item}
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.35 + idx * 0.08 }}
-                        className="rounded-lg border border-white/10 bg-white/5 p-3 text-center"
-                      >
-                        <div className="text-xs font-semibold text-white/60">{item}</div>
-                        <div className="mt-1 text-sm font-bold text-white/80">✓</div>
-                      </motion.div>
-                    ))}
-                  </div>
 
-                  {/* Bottom CTA */}
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.6 }}
-                    className="rounded-lg border border-white/10 bg-white/5 p-4 text-center"
-                  >
-                    <p className="text-xs font-semibold uppercase tracking-[0.1em] text-white/50">
-                      Explore Full Details
-                    </p>
-                  </motion.div>
                 </div>
               </motion.div>
             </Reveal>
