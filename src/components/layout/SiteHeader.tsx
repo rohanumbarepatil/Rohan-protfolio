@@ -16,11 +16,13 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/8 bg-[#050505]/70 backdrop-blur-xl">
       <div className="section-shell flex h-20 items-center justify-between gap-4">
-        <a href="#home" className="flex items-center gap-3">
+        <a href="#home" className="group flex items-center gap-3">
           <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm font-semibold tracking-[0.2em] text-white">
             R
           </span>
-          <span className="hidden text-sm tracking-[0.24em] text-white/70 sm:block">ROHAN / PORTFOLIO</span>
+          <span className="hidden max-w-0 overflow-hidden text-sm tracking-[0.24em] text-white/70 transition-all duration-300 group-hover:max-w-xs sm:block">
+            ROHAN
+          </span>
         </a>
 
         <nav className="hidden items-center gap-2 rounded-full border border-white/8 bg-white/5 px-3 py-2 lg:flex">
