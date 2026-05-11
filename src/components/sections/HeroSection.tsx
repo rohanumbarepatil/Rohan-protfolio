@@ -1,4 +1,5 @@
 import { ArrowDownRight, Download } from 'lucide-react'
+import heroPng from '@/assets/hero.png'
 import { motion } from 'framer-motion'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -72,7 +73,7 @@ export function HeroSection() {
               <div className="relative grid gap-5">
                 <div className="aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5">
                   <img
-                    src="https://rohans-portfolio-mu.vercel.app/assets/coding-pov.png"
+                    src={heroPng}
                     alt="coding pov"
                     className="h-full w-full object-cover object-center grayscale contrast-110"
                   />

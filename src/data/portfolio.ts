@@ -11,6 +11,55 @@ import type {
   TimelineEntry,
 } from '@/types/portfolio'
 
+// Thumbnails
+import thumbCourse from '@/assets/Thumbnails/Course_Completion.jpeg'
+import thumbInternship from '@/assets/Thumbnails/Internship_Certificates.jpeg'
+import thumbTechEvents from '@/assets/Thumbnails/Technical_Events_Certificates.jpeg'
+
+// Achievement
+import hacktonWinner from '@/assets/website_gallery/Hackton Winner.jpg'
+
+// Gallery
+import argueMind from '@/assets/website_gallery/Argue mind.jpg'
+import asgo from '@/assets/website_gallery/ASGO.JPG'
+import associationMember from '@/assets/website_gallery/Association Member.jpg'
+import asureWorkshop from '@/assets/website_gallery/Asure Workshop.jpg'
+import building from '@/assets/website_gallery/Building.jpg'
+import certificate from '@/assets/website_gallery/Certificate.jpg'
+import csesaInaugration from '@/assets/website_gallery/CSESA Inaugration.jpg'
+import csesaMember from '@/assets/website_gallery/CSESA Member.jpg'
+import discussion from '@/assets/website_gallery/Discussion.JPG'
+import enggDay from '@/assets/website_gallery/Engg. Day.webp'
+import fasionShowWin from '@/assets/website_gallery/Fasion Show Win.jpg'
+import foundationDay25 from '@/assets/website_gallery/Foundation day 25.jpg'
+import foundationDay from '@/assets/website_gallery/Foundation Day.jpg'
+import hackauraHackthon from '@/assets/website_gallery/Hackaura_Hackthon.JPG'
+import hacktonTeam from '@/assets/website_gallery/Hackton team.jpg'
+import hacktonWin from '@/assets/website_gallery/Hackton Win.jpg'
+import handprint from '@/assets/website_gallery/Handprint.jpg'
+import ideaPitchingDouble from '@/assets/website_gallery/Idea  Pitching.JPG'
+import ideaPitch from '@/assets/website_gallery/Idea Pitch.jpg'
+import inoquest25 from '@/assets/website_gallery/Inoquest 25.jpg'
+import inoquest2k25 from '@/assets/website_gallery/inoquest 2k25.jpg'
+import inoquest from '@/assets/website_gallery/Inoquest.jpg'
+import miniHackton from '@/assets/website_gallery/Mini Hackton.jpg'
+import presentation from '@/assets/website_gallery/Presentation.jpg'
+import sports2k25 from '@/assets/website_gallery/Sports 2k25.jpg'
+import stallEvent from '@/assets/website_gallery/Stall Event.JPG'
+import technoverse from '@/assets/website_gallery/TECHNOVERSE.jpg'
+import tecnoTeam from '@/assets/website_gallery/Tecno_Team.jpeg'
+import theEventVolunteers from '@/assets/website_gallery/The_Event_Volunteers_Eureka.jpg'
+import thePitch from '@/assets/website_gallery/THe_Pitch.jpeg'
+import umang2k25 from '@/assets/website_gallery/umang 2k25.jpg'
+import umang from '@/assets/website_gallery/Umang.jpg'
+import visitBalSankul from '@/assets/website_gallery/Visit Bal Sankul.jpg'
+import gitGithubSession from '@/assets/website_gallery/Git & Github Session.jpeg'
+import gitGithubSession2 from '@/assets/website_gallery/Git Github Session.jpeg'
+import magzineCommitee from '@/assets/website_gallery/Magzine Commitee.jpeg'
+import magzinePhotoshoot from '@/assets/website_gallery/Magzine Photoshoot.jpeg'
+import offerLetter from '@/assets/website_gallery/Offer_Letter.jpg'
+import projectPitch from '@/assets/website_gallery/Project Pitch.jpeg'
+
 export const sectionIds: SectionId[] = [
   'home',
   'about',
@@ -119,7 +168,7 @@ export const achievements: Achievement[] = [
     title: 'Mini Hackathon Winner',
     meta: 'Tech Event • Oct 2025',
     detail: 'Secured first place in the intensive competitive coding Mini Hackathon.',
-    image: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Hackton%20Winner.jpg',
+    image: hacktonWinner,
     alt: 'Mini Hackathon Winner',
   },
 ]
@@ -221,206 +270,45 @@ export const projects: ProjectItem[] = [
 ]
 
 export const gallery: GalleryItem[] = [
-  {
-    title: 'Argue mind',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Argue%20mind.jpg',
-    alt: 'Argue mind',
-  },
-  {
-    title: 'ASGO',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/ASGO.JPG',
-    alt: 'ASGO',
-  },
-  {
-    title: 'Association Member',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Association%20Member.jpg',
-    alt: 'Association Member',
-  },
-  {
-    title: 'Asure Workshop',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Asure%20Workshop.jpg',
-    alt: 'Asure Workshop',
-  },
-  {
-    title: 'Building',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Building.jpg',
-    alt: 'Building',
-  },
-  {
-    title: 'Certificate',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Certificate.jpg',
-    alt: 'Certificate',
-  },
-  {
-    title: 'CSESA Inaugration',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/CSESA%20Inaugration.jpg',
-    alt: 'CSESA Inaugration',
-  },
-  {
-    title: 'CSESA Member',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/CSESA%20Member.jpg',
-    alt: 'CSESA Member',
-  },
-  {
-    title: 'Discussion',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Discussion.JPG',
-    alt: 'Discussion',
-  },
-  {
-    title: 'Engg. Day',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Engg.%20Day.webp',
-    alt: 'Engg. Day',
-  },
-  {
-    title: 'Eureka25',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Eureka25.JPG',
-    alt: 'Eureka25',
-  },
-  {
-    title: 'Fasion Show Win',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Fasion%20Show%20Win.jpg',
-    alt: 'Fasion Show Win',
-  },
-  {
-    title: 'Foundation day 25',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Foundation%20day%2025.jpg',
-    alt: 'Foundation day 25',
-  },
-  {
-    title: 'Foundation Day',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Foundation%20Day.jpg',
-    alt: 'Foundation Day',
-  },
-  {
-    title: 'Hackaura Hackthon',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Hackaura_Hackthon.JPG',
-    alt: 'Hackaura Hackthon',
-  },
-  {
-    title: 'Hackton team',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Hackton%20team.jpg',
-    alt: 'Hackton team',
-  },
-  {
-    title: 'Hackton Win',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Hackton%20Win.jpg',
-    alt: 'Hackton Win',
-  },
-  {
-    title: 'Handprint',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Handprint.jpg',
-    alt: 'Handprint',
-  },
-  {
-    title: 'Idea Pitching',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Idea%20%20Pitching.JPG',
-    alt: 'Idea Pitching',
-  },
-  {
-    title: 'Idea Pitch',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Idea%20Pitch.jpg',
-    alt: 'Idea Pitch',
-  },
-  {
-    title: 'Inoquest 25',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Inoquest%2025.jpg',
-    alt: 'Inoquest 25',
-  },
-  {
-    title: 'inoquest 2k25',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/inoquest%202k25.jpg',
-    alt: 'inoquest 2k25',
-  },
-  {
-    title: 'Inoquest',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Inoquest.jpg',
-    alt: 'Inoquest',
-  },
-  {
-    title: 'Mini Hackton',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Mini%20Hackton.jpg',
-    alt: 'Mini Hackton',
-  },
-  {
-    title: 'Presentation',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Presentation.jpg',
-    alt: 'Presentation',
-  },
-  {
-    title: 'Sports 2k25',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Sports%202k25.jpg',
-    alt: 'Sports 2k25',
-  },
-  {
-    title: 'Stall Event',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Stall%20Event.JPG',
-    alt: 'Stall Event',
-  },
-  {
-    title: 'TECHNOVERSE',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/TECHNOVERSE.jpg',
-    alt: 'TECHNOVERSE',
-  },
-  {
-    title: 'Tecno Team',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Tecno_Team.jpeg',
-    alt: 'Tecno Team',
-  },
-  {
-    title: 'The Event Volunteers Eureka',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/The_Event_Volunteers_Eureka.jpg',
-    alt: 'The Event Volunteers Eureka',
-  },
-  {
-    title: 'The Pitch',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/THe_Pitch.jpeg',
-    alt: 'The Pitch',
-  },
-  {
-    title: 'umang 2k25',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/umang%202k25.jpg',
-    alt: 'umang 2k25',
-  },
-  {
-    title: 'Umang',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Umang.jpg',
-    alt: 'Umang',
-  },
-  {
-    title: 'Visit Bal Sankul',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Visit%20Bal%20Sankul.jpg',
-    alt: 'Visit Bal Sankul',
-  },
-  {
-    title: 'Git & Github Session',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Git%20&%20Github%20Session.jpeg',
-    alt: 'Git & Github Session',
-  },
-  {
-    title: 'Git Github Session',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Git%20Github%20Session.jpeg',
-    alt: 'Git Github Session',
-  },
-  {
-    title: 'Magzine Commitee',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Magzine%20Commitee.jpeg',
-    alt: 'Magzine Commitee',
-  },
-  {
-    title: 'Magzine Photoshoot',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Magzine%20Photoshoot.jpeg',
-    alt: 'Magzine Photoshoot',
-  },
-  {
-    title: 'Offer Letter',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Offer_Letter.jpg',
-    alt: 'Offer Letter',
-  },
-  {
-    title: 'Project Pitch',
-    src: 'https://rohans-portfolio-mu.vercel.app/website_gallery/Project%20Pitch.jpeg',
-    alt: 'Project Pitch',
-  },
+  { title: 'Argue mind', src: argueMind, alt: 'Argue mind' },
+  { title: 'ASGO', src: asgo, alt: 'ASGO' },
+  { title: 'Association Member', src: associationMember, alt: 'Association Member' },
+  { title: 'Asure Workshop', src: asureWorkshop, alt: 'Asure Workshop' },
+  { title: 'Building', src: building, alt: 'Building' },
+  { title: 'Certificate', src: certificate, alt: 'Certificate' },
+  { title: 'CSESA Inaugration', src: csesaInaugration, alt: 'CSESA Inaugration' },
+  { title: 'CSESA Member', src: csesaMember, alt: 'CSESA Member' },
+  { title: 'Discussion', src: discussion, alt: 'Discussion' },
+  { title: 'Engg. Day', src: enggDay, alt: 'Engg. Day' },
+  { title: 'Fasion Show Win', src: fasionShowWin, alt: 'Fasion Show Win' },
+  { title: 'Foundation day 25', src: foundationDay25, alt: 'Foundation day 25' },
+  { title: 'Foundation Day', src: foundationDay, alt: 'Foundation Day' },
+  { title: 'Hackaura Hackthon', src: hackauraHackthon, alt: 'Hackaura Hackthon' },
+  { title: 'Hackton team', src: hacktonTeam, alt: 'Hackton team' },
+  { title: 'Hackton Win', src: hacktonWin, alt: 'Hackton Win' },
+  { title: 'Handprint', src: handprint, alt: 'Handprint' },
+  { title: 'Idea Pitching', src: ideaPitchingDouble, alt: 'Idea Pitching' },
+  { title: 'Idea Pitch', src: ideaPitch, alt: 'Idea Pitch' },
+  { title: 'Inoquest 25', src: inoquest25, alt: 'Inoquest 25' },
+  { title: 'inoquest 2k25', src: inoquest2k25, alt: 'inoquest 2k25' },
+  { title: 'Inoquest', src: inoquest, alt: 'Inoquest' },
+  { title: 'Mini Hackton', src: miniHackton, alt: 'Mini Hackton' },
+  { title: 'Presentation', src: presentation, alt: 'Presentation' },
+  { title: 'Sports 2k25', src: sports2k25, alt: 'Sports 2k25' },
+  { title: 'Stall Event', src: stallEvent, alt: 'Stall Event' },
+  { title: 'TECHNOVERSE', src: technoverse, alt: 'TECHNOVERSE' },
+  { title: 'Tecno Team', src: tecnoTeam, alt: 'Tecno Team' },
+  { title: 'The Event Volunteers Eureka', src: theEventVolunteers, alt: 'The Event Volunteers Eureka' },
+  { title: 'The Pitch', src: thePitch, alt: 'The Pitch' },
+  { title: 'umang 2k25', src: umang2k25, alt: 'umang 2k25' },
+  { title: 'Umang', src: umang, alt: 'Umang' },
+  { title: 'Visit Bal Sankul', src: visitBalSankul, alt: 'Visit Bal Sankul' },
+  { title: 'Git & Github Session', src: gitGithubSession, alt: 'Git & Github Session' },
+  { title: 'Git Github Session', src: gitGithubSession2, alt: 'Git Github Session' },
+  { title: 'Magzine Commitee', src: magzineCommitee, alt: 'Magzine Commitee' },
+  { title: 'Magzine Photoshoot', src: magzinePhotoshoot, alt: 'Magzine Photoshoot' },
+  { title: 'Offer Letter', src: offerLetter, alt: 'Offer Letter' },
+  { title: 'Project Pitch', src: projectPitch, alt: 'Project Pitch' },
 ]
 
 export const skills: SkillGroup[] = [
@@ -462,7 +350,7 @@ export const certifications: CertificationItem[] = [
     meta: 'Various Platforms • 2023 - 2025',
     skills: ['AI', 'Cloud', 'Web Development', 'Data Analytics', 'Cybersecurity'],
     count: '14 Certificates inside',
-    image: 'https://rohans-portfolio-mu.vercel.app/assets/Thumbnails/Course_Completion.jpeg',
+    image: thumbCourse,
     alt: 'Course Certifications',
   },
   {
@@ -470,7 +358,7 @@ export const certifications: CertificationItem[] = [
     meta: 'Alfido Tech, Cognifyz, Internshala • 2025',
     skills: ['C/C++', 'Data Science', 'Campus Outreach'],
     count: '3 Certificates inside',
-    image: 'https://rohans-portfolio-mu.vercel.app/assets/Thumbnails/Internship_Certificates.jpeg',
+    image: thumbInternship,
     alt: 'Internship Certificates',
   },
   {
@@ -478,7 +366,7 @@ export const certifications: CertificationItem[] = [
     meta: 'Various Technical Events • 2024 - 2025',
     skills: ['Hackathons', 'Workshops', 'Coding Competitions', 'Event Coordination'],
     count: '9 Certificates inside',
-    image: 'https://rohans-portfolio-mu.vercel.app/assets/Thumbnails/Technical_Events_Certificates.jpeg',
+    image: thumbTechEvents,
     alt: 'Technical Events Certificates',
   },
 ]
