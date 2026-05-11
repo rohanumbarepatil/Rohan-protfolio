@@ -145,9 +145,6 @@ export const aboutNarrative = [
 ]
 
 export const hobbies = [
-  'READING BOOKS',
-  'PUBLIC SPEAKING',
-  'WRITING',
   'BUILDING PROJECTS',
   'EXPLORING NEW SKILLS',
   'TRAVELLING',
@@ -368,16 +365,16 @@ export const education: EducationItem[] = [
     keySkills: ['Data Structures', 'Problem Solving', 'Critical Thinking'],
   },
   {
-    title: 'Higher Secondary (12th Grade, PCMB)',
+    title: 'Higher Secondary (12th Grade, PCM)',
     institution: 'Walchand College Of Arts And Science, Solapur',
-    period: '—',
+    period: '2022—2024',
     grade: 'Grade: 60.2%',
     keySkills: ['Physics', 'Chemistry', 'Mathematics'],
   },
   {
     title: 'Secondary School (10th Grade)',
     institution: 'Vasantrao Gopinath Patil High School Nanduri, Tulajapur',
-    period: '—',
+    period: '2021-22',
     grade: 'Grade: 89.80%',
     keySkills: ['Communication', 'Science'],
   },
