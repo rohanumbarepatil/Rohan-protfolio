@@ -16,6 +16,39 @@ import thumbCourse from '@/assets/Thumbnails/Course_Completion.jpeg'
 import thumbInternship from '@/assets/Thumbnails/Internship_Certificates.jpeg'
 import thumbTechEvents from '@/assets/Thumbnails/Technical_Events_Certificates.jpeg'
 
+// Course Certifications
+import certAiAgent from '@/assets/Certification/Course_Certification/Ai Agent With UiPath.png'
+import certAiEngineer from '@/assets/Certification/Course_Certification/AI Engineer.jpg'
+import certAiForBeginner from '@/assets/Certification/Course_Certification/Ai For Beginner.jpeg'
+import certBuildingAi from '@/assets/Certification/Course_Certification/Building with AI.jpg'
+import certCommonInternship from '@/assets/Certification/Course_Certification/Common Internship Test.jpg'
+import certDataAnalytics from '@/assets/Certification/Course_Certification/Data Analytics.jpg'
+import certGenAiStudio from '@/assets/Certification/Course_Certification/Gen Ai Studio.jpg'
+import certGuvi from '@/assets/Certification/Course_Certification/Guvi Certification.png'
+import certAwsSandbox from '@/assets/Certification/Course_Certification/Innovation Sandbox on AWS.jpg'
+import certCyberSecurity from '@/assets/Certification/Course_Certification/Introduction Cyber Security.jpeg'
+import certJava from '@/assets/Certification/Course_Certification/Java Assessment.jpeg'
+import certPython from '@/assets/Certification/Course_Certification/Python For Beginner.jpg'
+import certReact from '@/assets/Certification/Course_Certification/React JS.jpg'
+import certWebDesign from '@/assets/Certification/Course_Certification/Web Design & Development.jpg'
+
+// Internship Certificates
+import certAlfido from '@/assets/Certification/Internship_Certificate/ALFIDO offer letter.png'
+import certCognifyz from '@/assets/Certification/Internship_Certificate/Cognifyz Offer Letter.jpeg'
+import certInternshala from '@/assets/Certification/Internship_Certificate/Internshala Student Partner (ISP).jpeg'
+
+// Technical Events Certificates
+import certArgueMind from '@/assets/Certification/Technical_Events_Certificates/Argue_Mind_New.jpg'
+import certElectrovert from '@/assets/Certification/Technical_Events_Certificates/Electrovert_25_New.jpg'
+import certEureka from '@/assets/Certification/Technical_Events_Certificates/Eureka_2k25_New.jpg'
+import certHackaura from '@/assets/Certification/Technical_Events_Certificates/Hackaura 2026.jpeg'
+import certMsAzure from '@/assets/Certification/Technical_Events_Certificates/Microsoft Asure.jpeg'
+import certNavJalsa from '@/assets/Certification/Technical_Events_Certificates/Nav_Jalsa_New.jpg'
+import certPicsart from '@/assets/Certification/Technical_Events_Certificates/Picsart_26-04-02_09-08-35-143.png'
+import certRitHackton from '@/assets/Certification/Technical_Events_Certificates/RIT_Hackton_New.jpeg'
+import certTechnovation from '@/assets/Certification/Technical_Events_Certificates/Technovation_1_0_New.jpg'
+import certTechpravartan from '@/assets/Certification/Technical_Events_Certificates/Techpravartan_2025_New.jpg'
+
 // Achievement
 import hacktonWinner from '@/assets/website_gallery/Hackton Winner.jpg'
 
@@ -352,6 +385,7 @@ export const certifications: CertificationItem[] = [
     count: '14 Certificates inside',
     image: thumbCourse,
     alt: 'Course Certifications',
+    images: [certAiAgent, certAiEngineer, certAiForBeginner, certBuildingAi, certCommonInternship, certDataAnalytics, certGenAiStudio, certGuvi, certAwsSandbox, certCyberSecurity, certJava, certPython, certReact, certWebDesign],
   },
   {
     title: 'Internship Certificates',
@@ -360,6 +394,7 @@ export const certifications: CertificationItem[] = [
     count: '3 Certificates inside',
     image: thumbInternship,
     alt: 'Internship Certificates',
+    images: [certAlfido, certCognifyz, certInternshala],
   },
   {
     title: 'Technical Events Certificates',
@@ -368,5 +403,6 @@ export const certifications: CertificationItem[] = [
     count: '9 Certificates inside',
     image: thumbTechEvents,
     alt: 'Technical Events Certificates',
+    images: [certArgueMind, certElectrovert, certEureka, certHackaura, certMsAzure, certNavJalsa, certPicsart, certRitHackton, certTechnovation, certTechpravartan],
   },
 ]

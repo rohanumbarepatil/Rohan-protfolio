@@ -26,7 +26,7 @@ export function AchievementsSection() {
           <Reveal key={achievement.title}>
             <Card className="overflow-hidden p-0">
               {achievement.image ? (
-                <img src={achievement.image} alt={achievement.alt ?? achievement.title} className="h-64 w-full object-cover object-center grayscale contrast-110" />
+                <img src={achievement.image} alt={achievement.alt ?? achievement.title} className="h-64 w-full object-cover object-center" />
               ) : null}
               <div className="p-6">
                 <p className="text-xs uppercase tracking-[0.3em] text-white/50">{achievement.meta}</p>

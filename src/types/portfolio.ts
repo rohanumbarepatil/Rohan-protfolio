@@ -88,4 +88,5 @@ export interface CertificationItem {
   count: string
   image: string
   alt: string
+  images: string[]
 }
