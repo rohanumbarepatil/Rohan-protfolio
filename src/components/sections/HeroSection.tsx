@@ -86,7 +86,7 @@ export function HeroSection() {
             </div>
 
             <div className="absolute -left-4 top-10 hidden animate-float rounded-full border border-white/10 bg-white/8 px-4 py-2 text-xs uppercase tracking-[0.3em] text-white/75 backdrop-blur-xl lg:block">
-              Check My Resume
+              Check My Profile
             </div>
           </motion.div>
         </div>
