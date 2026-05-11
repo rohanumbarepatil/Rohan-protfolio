@@ -18,13 +18,8 @@ export function HeroSection() {
       </div>
 
       <div className="relative z-10 flex min-h-[100svh] items-center">
-        <div className="section-shell grid gap-12 py-20 lg:grid-cols-[1.4fr_0.9fr] lg:items-center">
+        <div className="section-shell grid gap-12 py-8 lg:grid-cols-[1.4fr_0.9fr] lg:items-center">
           <motion.div variants={stagger} initial="hidden" animate="visible" className="max-w-3xl">
-            <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3">
-              <Badge>Why hire me</Badge>
-              <span className="text-sm text-white/55">{site.location}</span>
-            </motion.div>
-
             <motion.h1
               variants={fadeUp}
               transition={{ duration: 0.6, ease: 'easeOut' }}
