@@ -49,6 +49,10 @@ import certRitHackton from '@/assets/Certification/Technical_Events_Certificates
 import certTechnovation from '@/assets/Certification/Technical_Events_Certificates/Technovation_1_0_New.jpg'
 import certTechpravartan from '@/assets/Certification/Technical_Events_Certificates/Techpravartan_2025_New.jpg'
 
+// Project images
+import imgArogya360 from '@/assets/projects/Arogya360.png'
+import imgTaskFlow from '@/assets/projects/TaskFlow.png'
+
 // Achievement
 import hacktonWinner from '@/assets/website_gallery/Hackton Winner.jpg'
 
@@ -211,6 +215,7 @@ export const projects: ProjectItem[] = [
     slug: 'smart-health-care-system',
     title: 'Arogya360 Smart Health Management System',
     category: 'Full Stack Healthcare Platform',
+    image: imgArogya360,
     description: 'A web-based smart healthcare platform designed to simplify and digitize essential healthcare services through a centralized, user-friendly digital interface.',
     stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS', 'Flask', 'Firebase', 'GitHub', 'VS Code', 'Firebase Hosting'],
     links: [
@@ -258,6 +263,7 @@ export const projects: ProjectItem[] = [
     slug: 'taskflow',
     title: 'TaskFlow Simple To Do List Manager',
     category: 'Frontend Productivity Application',
+    image: imgTaskFlow,
     description: 'A lightweight web-based to-do list application designed to help users manage daily tasks efficiently through a simple and distraction-free interface.',
     stack: ['HTML', 'CSS', 'JavaScript', 'Netlify', 'GitHub'],
     links: [

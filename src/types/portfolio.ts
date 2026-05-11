@@ -54,6 +54,7 @@ export interface ProjectItem {
   description: string
   stack: string[]
   links: ProjectLink[]
+  image?: string
   about?: string
   objectives?: string[]
   keyFeatures?: string[]

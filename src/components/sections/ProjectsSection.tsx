@@ -161,25 +161,17 @@ export function ProjectsSection() {
               >
                 {/* Visual Placeholder with Gradient */}
                 <div className="space-y-6">
-                  {/* Header Visual */}
-                  <div className="relative h-48 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 p-6 overflow-hidden">
-                    <motion.div
-                      animate={{
-                        backgroundPosition: ['0% 0%', '100% 100%'],
-                      }}
-                      transition={{ duration: 20, repeat: Infinity, repeatType: 'reverse' }}
-                      className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-purple-500/20"
-                    />
-                    <div className="relative h-full flex flex-col justify-between">
-                      <div>
-                        <div className="h-3 w-2/3 rounded-full bg-white/20" />
-                        <div className="mt-2 h-2 w-1/2 rounded-full bg-white/10" />
-                      </div>
-                      <div className="space-y-2">
-                        <div className="h-2 w-full rounded-full bg-white/10" />
-                        <div className="h-2 w-4/5 rounded-full bg-white/10" />
-                      </div>
-                    </div>
+                  {/* Project Image */}
+                  <div className="relative h-48 rounded-2xl overflow-hidden">
+                    {project.image ? (
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="h-full w-full object-cover object-center"
+                      />
+                    ) : (
+                      <div className="h-full w-full bg-gradient-to-br from-white/10 to-white/5" />
+                    )}
                   </div>
 
                   {/* Stats/Features Visual */}
