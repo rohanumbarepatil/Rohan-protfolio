@@ -1,5 +1,6 @@
 import { ArrowDownRight, Download } from 'lucide-react'
 import heroPng from '@/assets/hero.png'
+import idCard from '@/assets/id card/Picsart_26-05-12_01-49-32-323.png'
 import { motion } from 'framer-motion'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -18,7 +19,7 @@ export function HeroSection() {
       </div>
 
       <div className="relative z-10 flex min-h-[100svh] items-center">
-        <div className="section-shell grid gap-12 py-8 lg:grid-cols-[1.4fr_0.9fr] lg:items-center">
+        <div className="section-shell grid gap-12 py-4 lg:grid-cols-[1.4fr_0.9fr] lg:items-center">
           <motion.div variants={stagger} initial="hidden" animate="visible" className="max-w-3xl">
             <motion.h1
               variants={fadeUp}
@@ -66,17 +67,14 @@ export function HeroSection() {
             <div className="liquid-glass-strong relative overflow-hidden rounded-[2rem] p-5">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.16),transparent_40%)]" />
               <div className="relative grid gap-5">
-                <div className="aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5">
+                <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5">
                   <img
-                    src={heroPng}
-                    alt="coding pov"
-                    className="h-full w-full object-cover object-center grayscale contrast-110"
+                    src={idCard}
+                    alt="id card"
+                    className="w-full h-auto object-contain"
                   />
                 </div>
 
-                <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm leading-7 text-white/65">
-                  Modern. Scalable. Web Applications. Debugging. Creative UI.
-                </div>
               </div>
             </div>
 
