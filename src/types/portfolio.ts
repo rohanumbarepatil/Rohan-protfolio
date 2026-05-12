@@ -6,6 +6,7 @@ export type SectionId =
   | 'experience'
   | 'achievements'
   | 'certifications'
+  | 'hackathons'
   | 'gallery'
   | 'resume'
   | 'contact'

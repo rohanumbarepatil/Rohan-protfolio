@@ -105,6 +105,7 @@ export const sectionIds: SectionId[] = [
   'experience',
   'achievements',
   'certifications',
+  'hackathons',
   'gallery',
   'resume',
   'contact',
@@ -117,6 +118,7 @@ export const navigation: NavItem[] = [
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
   { label: 'Achievements', href: '#achievements' },
+  { label: 'Hackathons', href: '#hackathons' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Contact', href: '#contact' },
 ]
