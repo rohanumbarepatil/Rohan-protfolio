@@ -8,8 +8,8 @@ import ritGallery3 from '@/assets/Hacktons/RIT Islampur/rithackathon__arogya360_
 import ritGallery4 from '@/assets/Hacktons/RIT Islampur/rithackathon__arogya360__squadmatrix__hackathonex (4).jpg'
 
 import hackauraCert from '@/assets/Certification/Technical_Events_Certificates/Hackaura 2026.jpeg'
-import hackauraPreview from '@/assets/Hacktons/SRKIT Nipani/hackaura2026__hackathon__fullstackdevelopment__re.jpg'
-import hackauraGallery1 from '@/assets/Hacktons/SRKIT Nipani/hackaura2026__hackathon__fullstackdevelopment__re (1).jpg'
+import hackauraPreview from '@/assets/Hacktons/SRKIT Nipani/hackaura2026__hackathon__fullstackdevelopment__re (1).jpg'
+import hackauraGallery1 from '@/assets/Hacktons/SRKIT Nipani/hackaura2026__hackathon__fullstackdevelopment__re.jpg'
 import hackauraGallery2 from '@/assets/Hacktons/SRKIT Nipani/hackaura2026__hackathon__fullstackdevelopment__re (2).jpg'
 import hackauraGallery3 from '@/assets/Hacktons/SRKIT Nipani/hackaura2026__hackathon__fullstackdevelopment__re (3).jpg'
 
