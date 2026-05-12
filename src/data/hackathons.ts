@@ -1,25 +1,30 @@
 import type { HackathonItem } from '@/types/portfolio'
 
 import ritHero from '@/assets/Certification/Technical_Events_Certificates/RIT_Hackton_New.jpeg'
-import ritProject from '@/assets/projects/Arogya360.png'
-import ritCollabShot from '@/assets/website_gallery/Hackton team.jpg'
-import ritVictoryShot from '@/assets/website_gallery/Hackton Win.jpg'
-import ritWinnerShot from '@/assets/website_gallery/Hackton Winner.jpg'
+import ritPreview from '@/assets/Hacktons/RIT Islampur/rithackathon__arogya360__squadmatrix__hackathonex.jpg'
+import ritGallery1 from '@/assets/Hacktons/RIT Islampur/rithackathon__arogya360__squadmatrix__hackathonex (1).jpg'
+import ritGallery2 from '@/assets/Hacktons/RIT Islampur/rithackathon__arogya360__squadmatrix__hackathonex (2).jpg'
+import ritGallery3 from '@/assets/Hacktons/RIT Islampur/rithackathon__arogya360__squadmatrix__hackathonex (3).jpg'
+import ritGallery4 from '@/assets/Hacktons/RIT Islampur/rithackathon__arogya360__squadmatrix__hackathonex (4).jpg'
 
 import hackauraCert from '@/assets/Certification/Technical_Events_Certificates/Hackaura 2026.jpeg'
-import hackauraPitch from '@/assets/website_gallery/Idea Pitch.jpg'
-import hackauraPresentation from '@/assets/website_gallery/Presentation.jpg'
+import hackauraPreview from '@/assets/Hacktons/SRKIT Nipani/hackaura2026__hackathon__fullstackdevelopment__re.jpg'
+import hackauraGallery1 from '@/assets/Hacktons/SRKIT Nipani/hackaura2026__hackathon__fullstackdevelopment__re (1).jpg'
+import hackauraGallery2 from '@/assets/Hacktons/SRKIT Nipani/hackaura2026__hackathon__fullstackdevelopment__re (2).jpg'
+import hackauraGallery3 from '@/assets/Hacktons/SRKIT Nipani/hackaura2026__hackathon__fullstackdevelopment__re (3).jpg'
 
 import technovationHero from '@/assets/Certification/Technical_Events_Certificates/Technovation_1_0_New.jpg'
-import technovationMini from '@/assets/website_gallery/Mini Hackton.jpg'
-import technovationWinner from '@/assets/The_winner_in_Mini_Hackthon/Mini_Hackathon_Winner_New.jpeg'
-import technovationPresentation from '@/assets/website_gallery/Presentation.jpeg'
-import technovationPitch from '@/assets/website_gallery/Project Pitch.jpeg'
+import technovationPreview from '@/assets/Hacktons/BSIT Kolhapur/ai__hackathon__nlp__machinelearning__innovation__.jpg'
+import technovationGallery1 from '@/assets/Hacktons/BSIT Kolhapur/ai__hackathon__nlp__machinelearning__innovation__ (1).jpg'
+import technovationGallery2 from '@/assets/Hacktons/BSIT Kolhapur/ai__hackathon__nlp__machinelearning__innovation__ (3).jpg'
 
 import techpravartanHero from '@/assets/Certification/Technical_Events_Certificates/Techpravartan_2025_New.jpg'
-import techpravartanWinner from '@/assets/website_gallery/Mini_Hackthon_Winner.jpg'
-import techpravartanTeam from '@/assets/website_gallery/Hackton team.jpg'
-import techpravartanWin from '@/assets/website_gallery/Hackton Win.jpg'
+import techpravartanPreview from '@/assets/Hacktons/SBGOI Miraj/hackathon__teamcse__innovation__proudmoment__coll.jpg'
+import techpravartanGallery1 from '@/assets/Hacktons/SBGOI Miraj/hackathon__teamcse__innovation__proudmoment__coll (1).jpg'
+import techpravartanGallery2 from '@/assets/Hacktons/SBGOI Miraj/hackathon__teamcse__innovation__proudmoment__coll (2).jpg'
+import techpravartanGallery3 from '@/assets/Hacktons/SBGOI Miraj/hackathon__teamcse__innovation__proudmoment__coll (3).jpg'
+import techpravartanGallery4 from '@/assets/Hacktons/SBGOI Miraj/IMG20251014175919.jpg'
+import techpravartanGallery5 from '@/assets/Hacktons/SBGOI Miraj/IMG20251014181219~2.jpg'
 
 export const hackathons: HackathonItem[] = [
   {
@@ -64,7 +69,7 @@ export const hackathons: HackathonItem[] = [
       { label: 'Team', value: 'Squad Matrix', detail: '4 builders' },
       { label: 'Focus', value: 'Smart Healthcare', detail: 'Municipal operations' }
     ],
-    heroImage: ritHero,
+    heroImage: ritPreview,
     team: [
       { name: 'Sanket Sutar', role: 'Team Member' },
       { name: 'Onkar Jadhavar', role: 'Team Member' },
@@ -72,10 +77,11 @@ export const hackathons: HackathonItem[] = [
       { name: 'Rohan Umbare patil', role: 'Team Member' }
     ],
     gallery: [
-      ritProject,
-      ritCollabShot,
-      ritVictoryShot,
-      ritWinnerShot
+      ritPreview,
+      ritGallery1,
+      ritGallery2,
+      ritGallery3,
+      ritGallery4
     ],
     certificates: [
       ritHero
@@ -135,7 +141,7 @@ export const hackathons: HackathonItem[] = [
       { label: 'Team', value: 'Web Wizards', detail: '4 builders' },
       { label: 'Focus', value: 'Referral Health Vault', detail: 'Rural healthcare' }
     ],
-    heroImage: hackauraPitch,
+    heroImage: hackauraPreview,
     team: [
       { name: 'Shivani Mali', role: 'Team Member' },
       { name: 'Gouri Belludi', role: 'Team Member' },
@@ -143,9 +149,10 @@ export const hackathons: HackathonItem[] = [
       { name: 'Rohan Umbare patil', role: 'Team Member' }
     ],
     gallery: [
-      hackauraPitch,
-      hackauraPresentation,
-      hackauraCert
+      hackauraPreview,
+      hackauraGallery1,
+      hackauraGallery2,
+      hackauraGallery3
     ],
     certificates: [
       hackauraCert
@@ -200,7 +207,7 @@ export const hackathons: HackathonItem[] = [
       { label: 'Team', value: 'Innovators', detail: '5 members' },
       { label: 'Focus', value: 'AI + NLP', detail: 'Education analytics' }
     ],
-    heroImage: technovationHero,
+    heroImage: technovationPreview,
     team: [
       { name: 'Shivani Mali', role: 'Team Member' },
       { name: 'Nipun Shah', role: 'Team Member' },
@@ -209,10 +216,9 @@ export const hackathons: HackathonItem[] = [
       { name: 'Rohan Umbare patil', role: 'Team Member' }
     ],
     gallery: [
-      technovationMini,
-      technovationWinner,
-      technovationPresentation,
-      technovationPitch
+      technovationPreview,
+      technovationGallery1,
+      technovationGallery2,
     ],
     certificates: [
       technovationHero
@@ -265,15 +271,17 @@ export const hackathons: HackathonItem[] = [
       { label: 'Team', value: 'Team CSE', detail: 'Winning squad' },
       { label: 'Result', value: 'Winner Prize', detail: 'Prize-winning build' }
     ],
-    heroImage: techpravartanHero,
+    heroImage: techpravartanPreview,
     team: [
       { name: 'Team CSE', role: 'Winners' }
     ],
     gallery: [
-      techpravartanHero,
-      techpravartanWinner,
-      techpravartanTeam,
-      techpravartanWin
+      techpravartanPreview,
+      techpravartanGallery1,
+      techpravartanGallery2,
+      techpravartanGallery3,
+      techpravartanGallery4,
+      techpravartanGallery5
     ],
     certificates: [
       techpravartanHero

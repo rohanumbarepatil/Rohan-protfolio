@@ -14,6 +14,10 @@ export function ProjectPage() {
   const project = projects.find((p) => p.slug === slug)
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+  }, [slug])
+
+  useEffect(() => {
     if (project) {
       updateSeo({
         title: `${project.title} | Rohan Portfolio`,

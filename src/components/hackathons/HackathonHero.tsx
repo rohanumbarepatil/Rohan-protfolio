@@ -1,12 +1,14 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import type { HackathonItem } from '@/types/portfolio'
 import { ArrowUpRight, Award, CalendarDays, Clock, Github, Globe, Linkedin, Users } from 'lucide-react'
 
 interface Props {
   hackathon: HackathonItem
+  readMoreHref?: string
 }
 
-export function HackathonHero({ hackathon }: Props) {
+export function HackathonHero({ hackathon, readMoreHref }: Props) {
   const teamCount = hackathon.team.length
 
   return (
@@ -103,6 +105,14 @@ export function HackathonHero({ hackathon }: Props) {
               <Linkedin className="h-4 w-4" />
               LinkedIn Post
             </a>
+            {readMoreHref ? (
+              <Link
+                to={readMoreHref}
+                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-gray-200 transition-colors hover:bg-white/10"
+              >
+                Read More
+              </Link>
+            ) : null}
           </motion.div>
         </div>
 
