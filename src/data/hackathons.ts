@@ -71,10 +71,10 @@ export const hackathons: HackathonItem[] = [
     ],
     heroImage: ritPreview,
     team: [
-      { name: 'Sanket Sutar', role: 'Team Member' },
-      { name: 'Onkar Jadhavar', role: 'Team Member' },
-      { name: 'Saurabh Taur', role: 'Team Member' },
-      { name: 'Rohan Umbare patil', role: 'Team Member' }
+      { name: 'Sanket Sutar', role: 'Backend Developer' },
+      { name: 'Onkar Jadhavar', role: 'UI/UX Designer' },
+      { name: 'Saurabh Taur', role: 'Documentation' },
+      { name: 'Rohan Umbare patil', role: 'Frontend Developer' }
     ],
     gallery: [
       ritPreview,
@@ -96,7 +96,7 @@ export const hackathons: HackathonItem[] = [
     ],
     links: {
       linkedin: 'https://www.linkedin.com/posts/rohan-umbare-patil-76b971358_rithackathon-arogya360-squadmatrix-activity-7443294430356381696-Ztrn',
-      demo: 'https://lnkd.in/gX8Xxffw'
+      demo: 'https://smart-health-system-e3411.web.app/',
     }
   },
   {
@@ -143,10 +143,10 @@ export const hackathons: HackathonItem[] = [
     ],
     heroImage: hackauraPreview,
     team: [
-      { name: 'Shivani Mali', role: 'Team Member' },
-      { name: 'Gouri Belludi', role: 'Team Member' },
-      { name: 'Nipun Shah', role: 'Team Member' },
-      { name: 'Rohan Umbare patil', role: 'Team Member' }
+      { name: 'Shivani Mali', role: 'Team Leader' },
+      { name: 'Gouri Belludi', role: 'Frontend Developer' },
+      { name: 'Nipun Shah', role: 'Backend Developer' },
+      { name: 'Rohan Umbare patil', role: 'Documentation' }
     ],
     gallery: [
       hackauraPreview,
@@ -209,11 +209,11 @@ export const hackathons: HackathonItem[] = [
     ],
     heroImage: technovationPreview,
     team: [
-      { name: 'Shivani Mali', role: 'Team Member' },
-      { name: 'Nipun Shah', role: 'Team Member' },
-      { name: 'Gouri Belludi', role: 'Team Member' },
-      { name: 'Niharika Tiwari', role: 'Team Member' },
-      { name: 'Rohan Umbare patil', role: 'Team Member' }
+      { name: 'Shivani Mali', role: 'Team Leader' },
+      { name: 'Nipun Shah', role: 'Backend Developer' },
+      { name: 'Gouri Belludi', role: 'Frontend Developer' },
+      { name: 'Niharika Tiwari', role: 'App Developer' },
+      { name: 'Rohan Umbare patil', role: 'Documentation' }
     ],
     gallery: [
       technovationPreview,
@@ -273,7 +273,10 @@ export const hackathons: HackathonItem[] = [
     ],
     heroImage: techpravartanPreview,
     team: [
-      { name: 'Team CSE', role: 'Winners' }
+      { name: 'Shivani Mali', role: 'Team Leader' },
+      { name: 'Gouri Belludi', role: 'Frontend Developer' },
+      { name: 'Nipun Shah', role: 'Backend Developer' },
+      { name: 'Rohan Umbare patil', role: 'Documentation' }
     ],
     gallery: [
       techpravartanPreview,

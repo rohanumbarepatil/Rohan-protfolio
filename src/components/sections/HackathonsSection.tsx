@@ -32,11 +32,7 @@ export function HackathonsSection() {
             title="Story-driven case studies from fast-moving builds"
             description="A recruiter-focused archive of hackathons, prototypes, teamwork, and demo-day storytelling. Newest experiences appear first."
           />
-
-          <div className="flex flex-wrap items-center gap-3 text-sm text-gray-400">
-            <Sparkles className="w-4 h-4 text-white/60" />
-            <span>Verified from local project assets and the stored portfolio dataset.</span>
-          </div>
+          
         </motion.div>
       </div>
 

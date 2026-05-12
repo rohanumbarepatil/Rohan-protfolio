@@ -52,6 +52,8 @@ import certTechpravartan from '@/assets/Certification/Technical_Events_Certifica
 // Project images
 import imgArogya360 from '@/assets/projects/Arogya360.png'
 import imgTaskFlow from '@/assets/projects/TaskFlow.png'
+import imgIGap from '@/assets/projects/iGap.png'
+import imgAIMLNexus from '@/assets/projects/AIML Nexus.png'
 
 // Achievement
 import hacktonWinner from '@/assets/website_gallery/Hackton Winner.jpg'
@@ -138,7 +140,7 @@ export const aboutHighlights = [
 
 export const aboutNarrative = [
   'I specialize in creating dynamic and responsive web applications while constantly enhancing my frontend and backend development skills.',
-  'I am based on Earth, and open to remote work worldwide.',
+  'I am based in India, and open to remote work worldwide.',
   'I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications.',
 ]
 
@@ -214,6 +216,7 @@ export const projects: ProjectItem[] = [
     description: 'A web-based smart healthcare platform designed to simplify and digitize essential healthcare services through a centralized, user-friendly digital interface.',
     stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS', 'Flask', 'Firebase', 'GitHub', 'VS Code', 'Firebase Hosting'],
     links: [
+      { label: 'Live', href: 'https://smart-health-system-e3411.web.app/' },
       { label: 'GitHub', href: 'https://github.com/rohan1785/Smart-Health-Care-System' },
       { label: 'Read More', href: '/projects/smart-health-care-system' },
     ],
@@ -262,7 +265,8 @@ export const projects: ProjectItem[] = [
     description: 'A lightweight web-based to-do list application designed to help users manage daily tasks efficiently through a simple and distraction-free interface.',
     stack: ['HTML', 'CSS', 'JavaScript', 'Netlify', 'GitHub'],
     links: [
-      { label: 'GitHub', href: 'https://github.com/rohan1785/Ghabit' },
+      { label: 'Live', href: 'https://rohanghabit.netlify.app/todolist.html' },
+       { label: 'GitHub', href: 'https://github.com/rohan1785/Ghabit' },
       { label: 'Read More', href: '/projects/taskflow' },
     ],
     about: 'TaskFlow is designed for students, developers, professionals, and individuals who want a fast, simple task manager without the complexity of larger productivity platforms.',
@@ -299,6 +303,69 @@ export const projects: ProjectItem[] = [
       'Mobile-first optimization',
       'Authentication system',
       'Multi-device sync',
+    ],
+  },
+  {
+    slug: 'nexora-i-gap',
+    title: 'Nexora iGAP Digital Experience Platform',
+    category: 'Corporate Website / UX',
+    image: imgIGap,
+    description:
+      'High-impact, fully responsive corporate website for iGAP Technologies built during the Nexora 2026 hackathon within a strict 3-hour build window. Focused on clear UI/UX, structured navigation, and conversion-driven design.',
+    stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS'],
+    links: [
+      { label: 'Live', href: 'https://nexora-i-gap-website.vercel.app/' },
+       { label: 'GitHub', href: 'https://github.com/Sanket-010s/NEXORA---iGAP-website-' },
+      { label: 'Read More', href: '/projects/nexora-i-gap' },
+    ],
+    about:
+      "Designed to transform a traditional company presence into a modern, conversion-focused digital platform showcasing services like AI/ML, Data Science, Web and Mobile Applications, ERP, and E-Commerce with a strong emphasis on brand consistency and engagement.",
+    objectives: [
+      'Deliver a production-level frontend under severe time constraints.',
+      'Create a conversion-focused layout highlighting services and trust signals.',
+      'Ensure responsive performance across devices.'
+    ],
+    keyFeatures: [
+      'Multi-section architecture (portfolio, solutions, academy, testimonials, contact)',
+      'Engagement-driven CTAs and visual hierarchy',
+      'Consistent typography and color system'
+    ],
+    learningOutcomes: [
+      'Rapid prototyping and production-grade frontend delivery',
+      'Designing for conversion and clarity',
+      'Optimizing responsiveness and performance'
+    ],
+  },
+  {
+    slug: 'aiml-nexus',
+    title: 'AIML Nexus – Gamified AI/ML Education Platform',
+    category: 'AI/ML Education Platform',
+    image: imgAIMLNexus,
+    description:
+      'A full-stack AI/ML learning platform that simplifies complex concepts through interactive modules, real-time analytics, and gamified experiences to engage learners and track progress.',
+    stack: ['React', 'Node.js', 'Firebase', 'Machine Learning'],
+    links: [
+      { label: 'Live', href: 'https://vibethon-teamsparten-spot11.web.app/auth' },
+       { label: 'GitHub', href: 'https://github.com/Sanket-010s/vibethon-TeamSparten-spot11' },
+      { label: 'Read More', href: '/projects/aiml-nexus' },
+    ],
+    about:
+      'AIML Nexus combines structured learning modules, quizzes with instant feedback, an AI Tutor, and mini-games to make AI/ML education interactive and scalable.',
+    objectives: [
+      'Provide an intuitive dashboard for progress tracking and insights',
+      'Deliver interactive modules covering core ML topics',
+      'Make learning engaging through gamification'
+    ],
+    keyFeatures: [
+      'Real-time progress tracking and analytics',
+      'Quiz system with instant feedback',
+      'AI Tutor functionality and mini-games',
+      'Google/GitHub authentication'
+    ],
+    learningOutcomes: [
+      'Combining frontend UX with ML concepts',
+      'Building interactive learning experiences',
+      'Implementing scalable authentication and analytics'
     ],
   },
 ]

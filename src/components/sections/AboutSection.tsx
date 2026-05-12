@@ -72,7 +72,7 @@ export function AboutSection() {
           <Reveal>
             <Card className="p-5 sm:p-6">
               <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-white/55">Time Zone</h3>
-              <p className="mt-3 text-sm leading-7 text-white/70">I'm based in Earth, and open to remote work worldwide.</p>
+              <p className="mt-3 text-sm leading-7 text-white/70">I’m based in India and open to remote work and collaboration opportunities worldwide.</p>
             </Card>
           </Reveal>
 
@@ -80,8 +80,9 @@ export function AboutSection() {
             <Card className="p-5 sm:p-6">
               <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-white/55">Teck Stack</h3>
               <p className="mt-3 text-sm leading-7 text-white/70">
-                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications.
-              </p>
+              React.js • JavaScript • Tailwind CSS • Node.js  • Firebase • Git & GitHub • Figma • Vercel • Responsive UI Development
+
+              </p>  
             </Card>
           </Reveal>
 
@@ -89,7 +90,8 @@ export function AboutSection() {
             <Card className="p-5 sm:p-6">
               <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-white/55">Hobbies</h3>
               <p className="mt-3 text-sm leading-7 text-white/70">
-                Beyond coding, I recharge with reading, public speaking, writing, building projects, learning new skills, travelling, playing games, and exploring new places.
+              Beyond coding, I enjoy building projects, exploring new technologies, travelling, gaming, content creation, public speaking, and continuously learning new skills that help me grow creatively and professionally.
+
               </p>
 
               <div className="mt-4 grid gap-2 sm:grid-cols-2">
