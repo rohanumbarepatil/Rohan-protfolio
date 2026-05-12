@@ -260,6 +260,69 @@ export const projects: ProjectItem[] = [
     ],
   },
   {
+    slug: 'nexora-i-gap',
+    title: 'Nexora iGAP Digital Experience Platform',
+    category: 'Corporate Website / UX',
+    image: imgIGap,
+    description:
+      'High-impact, fully responsive corporate website for iGAP Technologies built during the Nexora 2026 hackathon within a strict 3-hour build window. Focused on clear UI/UX, structured navigation, and conversion-driven design.',
+    stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS'],
+    links: [
+      { label: 'Live', href: 'https://nexora-i-gap-website.vercel.app/' },
+      { label: 'GitHub', href: 'https://github.com/Sanket-010s/NEXORA---iGAP-website-' },
+      { label: 'Read More', href: '/projects/nexora-i-gap' },
+    ],
+    about:
+      'Designed to transform a traditional company presence into a modern, conversion-focused digital platform showcasing services like AI/ML, Data Science, Web and Mobile Applications, ERP, and E-Commerce with a strong emphasis on brand consistency and engagement.',
+    objectives: [
+      'Deliver a production-level frontend under severe time constraints.',
+      'Create a conversion-focused layout highlighting services and trust signals.',
+      'Ensure responsive performance across devices.',
+    ],
+    keyFeatures: [
+      'Multi-section architecture (portfolio, solutions, academy, testimonials, contact)',
+      'Engagement-driven CTAs and visual hierarchy',
+      'Consistent typography and color system',
+    ],
+    learningOutcomes: [
+      'Rapid prototyping and production-grade frontend delivery',
+      'Designing for conversion and clarity',
+      'Optimizing responsiveness and performance',
+    ],
+  },
+  {
+    slug: 'aiml-nexus',
+    title: 'AIML Nexus – Gamified AI/ML Education Platform',
+    category: 'AI/ML Education Platform',
+    image: imgAIMLNexus,
+    description:
+      'A full-stack AI/ML learning platform that simplifies complex concepts through interactive modules, real-time analytics, and gamified experiences to engage learners and track progress.',
+    stack: ['React', 'Node.js', 'Firebase', 'Machine Learning'],
+    links: [
+      { label: 'Live', href: 'https://vibethon-teamsparten-spot11.web.app/auth' },
+      { label: 'GitHub', href: 'https://github.com/Sanket-010s/vibethon-TeamSparten-spot11' },
+      { label: 'Read More', href: '/projects/aiml-nexus' },
+    ],
+    about:
+      'AIML Nexus combines structured learning modules, quizzes with instant feedback, an AI Tutor, and mini-games to make AI/ML education interactive and scalable.',
+    objectives: [
+      'Provide an intuitive dashboard for progress tracking and insights',
+      'Deliver interactive modules covering core ML topics',
+      'Make learning engaging through gamification',
+    ],
+    keyFeatures: [
+      'Real-time progress tracking and analytics',
+      'Quiz system with instant feedback',
+      'AI Tutor functionality and mini-games',
+      'Google/GitHub authentication',
+    ],
+    learningOutcomes: [
+      'Combining frontend UX with ML concepts',
+      'Building interactive learning experiences',
+      'Implementing scalable authentication and analytics',
+    ],
+  },
+  {
     slug: 'taskflow',
     title: 'TaskFlow Simple To Do List Manager',
     category: 'Frontend Productivity Application',
@@ -268,7 +331,7 @@ export const projects: ProjectItem[] = [
     stack: ['HTML', 'CSS', 'JavaScript', 'Netlify', 'GitHub'],
     links: [
       { label: 'Live', href: 'https://rohanghabit.netlify.app/todolist.html' },
-       { label: 'GitHub', href: 'https://github.com/rohan1785/Ghabit' },
+      { label: 'GitHub', href: 'https://github.com/rohan1785/Ghabit' },
       { label: 'Read More', href: '/projects/taskflow' },
     ],
     about: 'TaskFlow is designed for students, developers, professionals, and individuals who want a fast, simple task manager without the complexity of larger productivity platforms.',
@@ -305,69 +368,6 @@ export const projects: ProjectItem[] = [
       'Mobile-first optimization',
       'Authentication system',
       'Multi-device sync',
-    ],
-  },
-  {
-    slug: 'nexora-i-gap',
-    title: 'Nexora iGAP Digital Experience Platform',
-    category: 'Corporate Website / UX',
-    image: imgIGap,
-    description:
-      'High-impact, fully responsive corporate website for iGAP Technologies built during the Nexora 2026 hackathon within a strict 3-hour build window. Focused on clear UI/UX, structured navigation, and conversion-driven design.',
-    stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS'],
-    links: [
-      { label: 'Live', href: 'https://nexora-i-gap-website.vercel.app/' },
-       { label: 'GitHub', href: 'https://github.com/Sanket-010s/NEXORA---iGAP-website-' },
-      { label: 'Read More', href: '/projects/nexora-i-gap' },
-    ],
-    about:
-      "Designed to transform a traditional company presence into a modern, conversion-focused digital platform showcasing services like AI/ML, Data Science, Web and Mobile Applications, ERP, and E-Commerce with a strong emphasis on brand consistency and engagement.",
-    objectives: [
-      'Deliver a production-level frontend under severe time constraints.',
-      'Create a conversion-focused layout highlighting services and trust signals.',
-      'Ensure responsive performance across devices.'
-    ],
-    keyFeatures: [
-      'Multi-section architecture (portfolio, solutions, academy, testimonials, contact)',
-      'Engagement-driven CTAs and visual hierarchy',
-      'Consistent typography and color system'
-    ],
-    learningOutcomes: [
-      'Rapid prototyping and production-grade frontend delivery',
-      'Designing for conversion and clarity',
-      'Optimizing responsiveness and performance'
-    ],
-  },
-  {
-    slug: 'aiml-nexus',
-    title: 'AIML Nexus – Gamified AI/ML Education Platform',
-    category: 'AI/ML Education Platform',
-    image: imgAIMLNexus,
-    description:
-      'A full-stack AI/ML learning platform that simplifies complex concepts through interactive modules, real-time analytics, and gamified experiences to engage learners and track progress.',
-    stack: ['React', 'Node.js', 'Firebase', 'Machine Learning'],
-    links: [
-      { label: 'Live', href: 'https://vibethon-teamsparten-spot11.web.app/auth' },
-       { label: 'GitHub', href: 'https://github.com/Sanket-010s/vibethon-TeamSparten-spot11' },
-      { label: 'Read More', href: '/projects/aiml-nexus' },
-    ],
-    about:
-      'AIML Nexus combines structured learning modules, quizzes with instant feedback, an AI Tutor, and mini-games to make AI/ML education interactive and scalable.',
-    objectives: [
-      'Provide an intuitive dashboard for progress tracking and insights',
-      'Deliver interactive modules covering core ML topics',
-      'Make learning engaging through gamification'
-    ],
-    keyFeatures: [
-      'Real-time progress tracking and analytics',
-      'Quiz system with instant feedback',
-      'AI Tutor functionality and mini-games',
-      'Google/GitHub authentication'
-    ],
-    learningOutcomes: [
-      'Combining frontend UX with ML concepts',
-      'Building interactive learning experiences',
-      'Implementing scalable authentication and analytics'
     ],
   },
 ]
