@@ -70,11 +70,9 @@ import enggDay from '@/assets/website_gallery/Engg. Day.webp'
 import fasionShowWin from '@/assets/website_gallery/Fasion Show Win.jpg'
 import foundationDay25 from '@/assets/website_gallery/Foundation day 25.jpg'
 import foundationDay from '@/assets/website_gallery/Foundation Day.jpg'
-import hackauraHackthon from '@/assets/website_gallery/Hackaura_Hackthon.JPG'
 import hacktonTeam from '@/assets/website_gallery/Hackton team.jpg'
 import hacktonWin from '@/assets/website_gallery/Hackton Win.jpg'
 import handprint from '@/assets/website_gallery/Handprint.jpg'
-import ideaPitchingDouble from '@/assets/website_gallery/Idea  Pitching.JPG'
 import ideaPitch from '@/assets/website_gallery/Idea Pitch.jpg'
 import inoquest25 from '@/assets/website_gallery/Inoquest 25.jpg'
 import inoquest2k25 from '@/assets/website_gallery/inoquest 2k25.jpg'
@@ -140,7 +138,7 @@ export const aboutHighlights = [
 
 export const aboutNarrative = [
   'I specialize in creating dynamic and responsive web applications while constantly enhancing my frontend and backend development skills.',
-  'I am based in Earth, and open to remote work worldwide.',
+  'I am based on Earth, and open to remote work worldwide.',
   'I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications.',
 ]
 
@@ -319,11 +317,11 @@ export const gallery: GalleryItem[] = [
   { title: 'Fasion Show Win', src: fasionShowWin, alt: 'Fasion Show Win' },
   { title: 'Foundation day 25', src: foundationDay25, alt: 'Foundation day 25' },
   { title: 'Foundation Day', src: foundationDay, alt: 'Foundation Day' },
-  { title: 'Hackaura Hackthon', src: hackauraHackthon, alt: 'Hackaura Hackthon' },
+  { title: 'Hackaura Hackthon', src: hacktonTeam, alt: 'Hackaura Hackthon' },
   { title: 'Hackton team', src: hacktonTeam, alt: 'Hackton team' },
   { title: 'Hackton Win', src: hacktonWin, alt: 'Hackton Win' },
   { title: 'Handprint', src: handprint, alt: 'Handprint' },
-  { title: 'Idea Pitching', src: ideaPitchingDouble, alt: 'Idea Pitching' },
+  { title: 'Idea Pitching', src: ideaPitch, alt: 'Idea Pitching' },
   { title: 'Idea Pitch', src: ideaPitch, alt: 'Idea Pitch' },
   { title: 'Inoquest 25', src: inoquest25, alt: 'Inoquest 25' },
   { title: 'inoquest 2k25', src: inoquest2k25, alt: 'inoquest 2k25' },

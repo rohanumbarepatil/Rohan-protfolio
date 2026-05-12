@@ -9,6 +9,7 @@ export type SectionId =
   | 'gallery'
   | 'resume'
   | 'contact'
+  | 'hackathons'
 
 export interface NavItem {
   label: string
@@ -90,4 +91,48 @@ export interface CertificationItem {
   image: string
   alt: string
   images: string[]
+}
+
+export interface HackathonTeamMember {
+  name: string
+  role?: string
+  image?: string
+}
+
+export interface HackathonStat {
+  label: string
+  value: string
+  detail?: string
+}
+
+export interface HackathonItem {
+  id: string
+  title: string
+  organizer: string
+  date: string
+  duration?: string
+  teamName: string
+  achievement: string
+  summary?: string
+  problemStatement: string
+  problemContext?: string
+  solutionOverview: string
+  realWorldImpact?: string
+  features: string[]
+  techStack: string[]
+  innovationPoints?: string[]
+  uiUxHighlights?: string[]
+  developmentProcess?: string[]
+  stats?: HackathonStat[]
+  heroImage?: string
+  team: HackathonTeamMember[]
+  gallery: string[] // paths to images
+  certificates: string[] // paths to certs
+  learningOutcomes: string[]
+  links: {
+    linkedin: string
+    github?: string
+    demo?: string
+    website?: string
+  }
 }

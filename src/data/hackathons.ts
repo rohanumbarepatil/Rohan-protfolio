@@ -1,0 +1,290 @@
+import type { HackathonItem } from '@/types/portfolio'
+
+import ritHero from '@/assets/Certification/Technical_Events_Certificates/RIT_Hackton_New.jpeg'
+import ritProject from '@/assets/projects/Arogya360.png'
+import ritCollabShot from '@/assets/website_gallery/Hackton team.jpg'
+import ritVictoryShot from '@/assets/website_gallery/Hackton Win.jpg'
+import ritWinnerShot from '@/assets/website_gallery/Hackton Winner.jpg'
+
+import hackauraCert from '@/assets/Certification/Technical_Events_Certificates/Hackaura 2026.jpeg'
+import hackauraPitch from '@/assets/website_gallery/Idea Pitch.jpg'
+import hackauraPresentation from '@/assets/website_gallery/Presentation.jpg'
+
+import technovationHero from '@/assets/Certification/Technical_Events_Certificates/Technovation_1_0_New.jpg'
+import technovationMini from '@/assets/website_gallery/Mini Hackton.jpg'
+import technovationWinner from '@/assets/The_winner_in_Mini_Hackthon/Mini_Hackathon_Winner_New.jpeg'
+import technovationPresentation from '@/assets/website_gallery/Presentation.jpeg'
+import technovationPitch from '@/assets/website_gallery/Project Pitch.jpeg'
+
+import techpravartanHero from '@/assets/Certification/Technical_Events_Certificates/Techpravartan_2025_New.jpg'
+import techpravartanWinner from '@/assets/website_gallery/Mini_Hackthon_Winner.jpg'
+import techpravartanTeam from '@/assets/website_gallery/Hackton team.jpg'
+import techpravartanWin from '@/assets/website_gallery/Hackton Win.jpg'
+
+export const hackathons: HackathonItem[] = [
+  {
+    id: 'rit-hackathon-2k26',
+    title: 'RIT Hackathon 2K26 (National Level)',
+    organizer: 'Rajarambapu Institute of Technology, Rajaramnagar, SAKHARALE',
+    date: '2026',
+    duration: '24 Hours Hackathon',
+    teamName: 'Squad Matrix',
+    achievement: 'Participant / Project Builder',
+    summary: 'Arogya360 framed a smarter municipal healthcare workflow for citizens, hospitals, and authorities inside one unified product story.',
+    problemStatement: 'Smart Health Solutions for Municipal Corporations and Municipal Hospitals.',
+    problemContext: 'Public healthcare coordination becomes difficult when beds, alerts, and citizen access live in separate systems.',
+    solutionOverview: 'Arogya360: An AI-powered Smart Healthcare System designed to connect citizens, hospitals, and authorities on one unified platform.',
+    realWorldImpact: 'Designed to reduce manual coordination overhead and create clearer visibility for everyday healthcare operations.',
+    features: [
+      'Role-based system (Citizen / Hospital / Authority)',
+      'Secure authentication using Firebase',
+      'Real-time dashboards for bed availability, disease tracking, health alerts',
+      'AI-based insights (prediction concept)',
+      'Live data handling using Firestore',
+      'Clean, responsive UI with multiple pages'
+    ],
+    techStack: ['React', 'Vite', 'Firebase', 'Firestore', 'Tailwind CSS', 'JavaScript'],
+    innovationPoints: [
+      'Unified municipal healthcare story across three user roles',
+      'AI-based insights concept for decision support',
+      'Real-time data layer built for live dashboard updates'
+    ],
+    uiUxHighlights: [
+      'Role-based navigation architecture',
+      'Dashboard-first information hierarchy',
+      'Responsive demo flow for judges and recruiters'
+    ],
+    developmentProcess: [
+      'Framed the challenge around citizen, hospital, and authority workflows.',
+      'Built the core product skeleton first so the live demo stayed stable.',
+      'Refined the UI and pitch storyline around hackathon judging pressure.'
+    ],
+    stats: [
+      { label: 'Duration', value: '24 Hours', detail: 'Full hackathon sprint' },
+      { label: 'Team', value: 'Squad Matrix', detail: '4 builders' },
+      { label: 'Focus', value: 'Smart Healthcare', detail: 'Municipal operations' }
+    ],
+    heroImage: ritHero,
+    team: [
+      { name: 'Sanket Sutar', role: 'Team Member' },
+      { name: 'Onkar Jadhavar', role: 'Team Member' },
+      { name: 'Saurabh Taur', role: 'Team Member' },
+      { name: 'Rohan Umbare patil', role: 'Team Member' }
+    ],
+    gallery: [
+      ritProject,
+      ritCollabShot,
+      ritVictoryShot,
+      ritWinnerShot
+    ],
+    certificates: [
+      ritHero
+    ],
+    learningOutcomes: [
+      'How to build under pressure',
+      'How to collaborate effectively',
+      'How to turn an idea into a working solution',
+      'Debugging errors at 3 AM',
+      'Fixing backend issues under time pressure',
+      'Connecting frontend and backend live'
+    ],
+    links: {
+      linkedin: 'https://www.linkedin.com/posts/rohan-umbare-patil-76b971358_rithackathon-arogya360-squadmatrix-activity-7443294430356381696-Ztrn',
+      demo: 'https://lnkd.in/gX8Xxffw'
+    }
+  },
+  {
+    id: 'hackaura-2026',
+    title: 'HackAura 2026',
+    organizer: 'Somasekhar R. Kothiwale Institute of Technology, Nipani',
+    date: '2026',
+    duration: '24 Hours Hackathon',
+    teamName: 'Web Wizards',
+    achievement: 'Full Stack Domain Participants',
+    summary: 'Arogya-Vahini turned a paper-heavy rural referral workflow into a secure, offline-first digital health vault.',
+    problemStatement: 'Arogya-Vahini – The Universal Rural Referral & Health Vault. In rural areas, patients carry paper referral records from PHCs to district hospitals, which often get lost, delaying treatment.',
+    problemContext: 'The challenge is not only digitization, but continuity of care in low-connectivity rural settings.',
+    solutionOverview: 'A digital referral platform that digitizes the entire patient referral process using secure QR tokens, allowing specialists to instantly access patient history offline-first.',
+    realWorldImpact: 'Helps reduce delays in treatment by preserving referral history and making patient information accessible where it matters most.',
+    features: [
+      'Digitizes entire patient referral process',
+      'Secure QR tokens to store patient health summaries',
+      'Instant access to complete patient history for specialists',
+      'Offline-first architecture with automatic sync',
+      'Multilingual support',
+      'Text-to-speech for rural doctors'
+    ],
+    techStack: ['React.js', 'Firebase', 'Firestore', 'PWA architecture', 'QR workflow'],
+    innovationPoints: [
+      'QR-token based referral continuity',
+      'Offline-first architecture for low-connectivity environments',
+      'Accessibility support through multilingual and text-to-speech layers'
+    ],
+    uiUxHighlights: [
+      'Simple information path for rural users',
+      'Fast specialist access to health history',
+      'PWA mindset for dependable field usage'
+    ],
+    developmentProcess: [
+      'Translated the referral journey into a digital workflow.',
+      'Focused on low-connectivity reliability before visual polish.',
+      'Prepared a demo narrative around rural health impact and access.'
+    ],
+    stats: [
+      { label: 'Duration', value: '24 Hours', detail: 'Hackathon sprint' },
+      { label: 'Team', value: 'Web Wizards', detail: '4 builders' },
+      { label: 'Focus', value: 'Referral Health Vault', detail: 'Rural healthcare' }
+    ],
+    heroImage: hackauraPitch,
+    team: [
+      { name: 'Shivani Mali', role: 'Team Member' },
+      { name: 'Gouri Belludi', role: 'Team Member' },
+      { name: 'Nipun Shah', role: 'Team Member' },
+      { name: 'Rohan Umbare patil', role: 'Team Member' }
+    ],
+    gallery: [
+      hackauraPitch,
+      hackauraPresentation,
+      hackauraCert
+    ],
+    certificates: [
+      hackauraCert
+    ],
+    learningOutcomes: [
+      'Building solutions for real societal impact',
+      'Implementing offline-first progressive web apps',
+      'Integrating secure QR token generation and validation',
+      'Collaborating effectively in a 24-hour time constraint'
+    ],
+    links: {
+      linkedin: 'https://www.linkedin.com/posts/rohan-umbare-patil-76b971358_hackaura2026-hackathon-fullstackdevelopment-activity-7438793603398660096-QonG'
+    }
+  },
+  {
+    id: 'technovation-1-0',
+    title: 'Mini Hackathon – Technovation 1.0',
+    organizer: 'Dr. Bapuji Salunkhe Institute of Engineering & Technology (BSIET), Kolhapur',
+    date: '2025',
+    duration: 'Mini Hackathon',
+    teamName: 'Innovators',
+    achievement: 'Participant',
+    summary: 'An AI-powered student feedback analyzer built to help educators turn open-ended comments into actionable insight.',
+    problemStatement: 'Analyzing open-ended student feedback is challenging and time-consuming for educators.',
+    problemContext: 'Feedback often contains rich signals, but manual review slows down the improvement loop for teachers and institutions.',
+    solutionOverview: 'AI-Powered Student Feedback Analyzer for Educators, focused on leveraging Artificial Intelligence and NLP to analyze student feedback, detect sentiment, and generate actionable insights.',
+    realWorldImpact: 'Helps educators identify what students feel, where courses can improve, and how to respond faster with data-backed decisions.',
+    features: [
+      'Natural Language Processing (NLP) integration',
+      'Automated sentiment detection',
+      'Actionable insights generation for improving teaching-learning process',
+      'Dashboard for educators to track feedback'
+    ],
+    techStack: ['AI', 'NLP', 'Machine Learning', 'Education Technology', 'Dashboard UX'],
+    innovationPoints: [
+      'Sentiment-aware feedback analysis',
+      'Actionable summarization for educators',
+      'AI + NLP integration for academic context'
+    ],
+    uiUxHighlights: [
+      'Clarity-first dashboard design',
+      'Feedback-to-insight information flow',
+      'Simple educator-friendly storytelling'
+    ],
+    developmentProcess: [
+      'Started with the pain point of long manual feedback review.',
+      'Built the NLP idea around sentiment detection and summarization.',
+      'Shaped the interface to make educator decisions faster to scan.'
+    ],
+    stats: [
+      { label: 'Duration', value: 'Mini Hackathon', detail: 'Short-form build' },
+      { label: 'Team', value: 'Innovators', detail: '5 members' },
+      { label: 'Focus', value: 'AI + NLP', detail: 'Education analytics' }
+    ],
+    heroImage: technovationHero,
+    team: [
+      { name: 'Shivani Mali', role: 'Team Member' },
+      { name: 'Nipun Shah', role: 'Team Member' },
+      { name: 'Gouri Belludi', role: 'Team Member' },
+      { name: 'Niharika Tiwari', role: 'Team Member' },
+      { name: 'Rohan Umbare patil', role: 'Team Member' }
+    ],
+    gallery: [
+      technovationMini,
+      technovationWinner,
+      technovationPresentation,
+      technovationPitch
+    ],
+    certificates: [
+      technovationHero
+    ],
+    learningOutcomes: [
+      'Leveraging Artificial Intelligence and Natural Language Processing',
+      'Solving real-world educational challenges',
+      'Collaborating, innovating, and applying technical knowledge'
+    ],
+    links: {
+      linkedin: 'https://www.linkedin.com/posts/rohan-umbare-patil-76b971358_ai-hackathon-nlp-activity-7393641436790853633-azvH'
+    }
+  },
+  {
+    id: 'techpravartan',
+    title: 'Mini Hackathon “TECHPRAVARTAN”',
+    organizer: 'Sanjay Bhokare Group of Institutes, Miraj',
+    date: 'Recent',
+    duration: 'Mini Hackathon',
+    teamName: 'Team CSE',
+    achievement: 'Winner Prize 🏆',
+    summary: 'A prize-winning prototype that blended coding, creativity, and fast decision-making under a mini hackathon format.',
+    problemStatement: 'Brainstorming innovative ideas to build a functional prototype addressing a specific domain challenge.',
+    problemContext: 'The event asked teams to move from idea to working prototype quickly, with clarity of execution and a strong demo path.',
+    solutionOverview: 'Built a functional prototype combining coding abilities, creativity, and problem-solving spirit.',
+    realWorldImpact: 'Showed how a compact team can transform a domain challenge into a working concept and present it with confidence.',
+    features: [
+      'Brainstorming innovative ideas',
+      'Building a functional prototype',
+      'End-to-end execution'
+    ],
+    techStack: ['Innovation', 'Technology', 'Problem Solving', 'Rapid Prototyping'],
+    innovationPoints: [
+      'Fast prototype validation',
+      'Creative problem framing',
+      'Winner-level execution under time pressure'
+    ],
+    uiUxHighlights: [
+      'Concise demo-oriented presentation',
+      'Prototype-first thinking',
+      'Clear problem-to-solution storytelling'
+    ],
+    developmentProcess: [
+      'Brainstormed ideas quickly and narrowed to a functional prototype path.',
+      'Balanced execution speed with visible demo quality.',
+      'Prepared the final pitch around clarity, confidence, and problem fit.'
+    ],
+    stats: [
+      { label: 'Duration', value: 'Mini Hackathon', detail: 'Rapid build format' },
+      { label: 'Team', value: 'Team CSE', detail: 'Winning squad' },
+      { label: 'Result', value: 'Winner Prize', detail: 'Prize-winning build' }
+    ],
+    heroImage: techpravartanHero,
+    team: [
+      { name: 'Team CSE', role: 'Winners' }
+    ],
+    gallery: [
+      techpravartanHero,
+      techpravartanWinner,
+      techpravartanTeam,
+      techpravartanWin
+    ],
+    certificates: [
+      techpravartanHero
+    ],
+    learningOutcomes: [
+      'Teamwork and creativity',
+      'Problem-solving spirit',
+      'Learning through building a functional prototype from scratch'
+    ],
+    links: {
+      linkedin: 'https://www.linkedin.com/posts/rohan-umbare-patil-76b971358_hackathon-teamcse-innovation-activity-7384219231837454351-B0dZ'
+    }
+  }
+]
