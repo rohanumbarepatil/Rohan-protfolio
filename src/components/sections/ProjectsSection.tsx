@@ -42,12 +42,12 @@ export function ProjectsSection() {
             key={project.slug}
             variants={itemVariants}
             className={`grid gap-8 lg:gap-12 ${
-              index % 2 === 0 ? 'lg:grid-cols-2' : 'lg:grid-cols-2 lg:auto-cols-max lg:[direction:rtl]'
+              index % 2 === 0 ? 'lg:grid-cols-2' : 'lg:grid-cols-2 lg:[direction:rtl]'
             }`}
           >
             {/* Content Side */}
             <Reveal>
-              <div className="flex flex-col justify-center space-y-6">
+              <div className="flex flex-col justify-center space-y-6 [direction:ltr]">
                 {/* Category Badge */}
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
@@ -157,7 +157,7 @@ export function ProjectsSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.15 }}
                 whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                className="liquid-glass-strong rounded-3xl border border-white/10 p-8 backdrop-blur-md transition-all duration-300 hover:border-white/20 hover:bg-white/8 sm:p-10"
+                className="liquid-glass-strong rounded-3xl border border-white/10 p-4 sm:p-6 lg:p-8 backdrop-blur-md transition-all duration-300 hover:border-white/20 hover:bg-white/8 [direction:ltr]"
               >
                 {/* Visual Placeholder with Gradient */}
                 <div className="space-y-6">

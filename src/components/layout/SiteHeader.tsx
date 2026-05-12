@@ -52,7 +52,7 @@ export function SiteHeader() {
 
       {menuOpen && (
         <div className="border-t border-white/8 bg-[#050505]/95 px-4 py-4 lg:hidden">
-          <div className="section-shell grid gap-2">
+          <div className="section-shell grid gap-2 max-h-[80vh] overflow-y-auto">
             {navigation.map((item) => (
               <a
                 key={item.label}

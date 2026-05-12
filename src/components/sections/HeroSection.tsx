@@ -63,7 +63,7 @@ export function HeroSection() {
             </motion.div>
           </motion.div>
 
-          <motion.div variants={fadeUp} initial="hidden" animate="visible" transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }} className="relative">
+          <motion.div variants={fadeUp} initial="hidden" animate="visible" transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }} className="relative order-last lg:order-none">
             <div className="liquid-glass-strong relative overflow-hidden rounded-[2rem] p-5">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.16),transparent_40%)]" />
               <div className="relative grid gap-5">
