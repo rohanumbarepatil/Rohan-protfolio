@@ -58,6 +58,7 @@ import imgSafeCity from '@/assets/Hacktons/KBPCOE Satara/Safecity.png'
 
 // Achievement
 import hacktonWinner from '@/assets/website_gallery/Hackton Winner.jpg'
+import ideaPitchPreview from '@/assets/achivment/1760614383151.jpg'
 
 // Gallery
 import argueMind from '@/assets/website_gallery/Argue mind.jpg'
@@ -204,6 +205,14 @@ export const timeline: TimelineEntry[] = [
 ]
 
 export const achievements: Achievement[] = [
+  {
+    title: 'Idea Pitching',
+    meta: 'Special Achievement • Oct 2025',
+    detail:
+      'Recognized for presenting an innovative idea at the Idea Pitching Event during National Innovation Day 2025 at Sanjay Ghodawat Institute.',
+    image: ideaPitchPreview,
+    alt: 'Idea Pitching special achievement preview',
+  },
   {
     title: 'Mini Hackathon Winner',
     meta: 'Tech Event • Oct 2025',
