@@ -1,5 +1,37 @@
+import { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 import { AppRoutes } from '@/routes/AppRoutes'
+import { LoadingScreen } from '@/components/layout/LoadingScreen'
 
 export function App() {
-  return <AppRoutes />
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setLoading(false)
+    }, 2800)
+
+    return () => window.clearTimeout(timer)
+  }, [])
+
+  useEffect(() => {
+    document.body.style.overflow = loading ? 'hidden' : ''
+
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [loading])
+
+  return (
+    <>
+      <LoadingScreen active={loading} />
+      <motion.div
+        initial={{ opacity: 0, filter: 'blur(8px)' }}
+        animate={loading ? { opacity: 0, filter: 'blur(8px)' } : { opacity: 1, filter: 'blur(0px)' }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+      >
+        <AppRoutes />
+      </motion.div>
+    </>
+  )
 }
