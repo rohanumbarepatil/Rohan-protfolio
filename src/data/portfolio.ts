@@ -54,7 +54,7 @@ import imgArogya360 from '@/assets/projects/Arogya360.png'
 import imgTaskFlow from '@/assets/projects/TaskFlow.png'
 import imgIGap from '@/assets/projects/iGap.png'
 import imgAIMLNexus from '@/assets/projects/AIML Nexus.png'
-import imgSafeCity from '@/assets/projects/Safecity.png'
+import imgSafeCity from '@/assets/Hacktons/KBPCOE Satara/Safecity.png'
 
 // Achievement
 import hacktonWinner from '@/assets/website_gallery/Hackton Winner.jpg'

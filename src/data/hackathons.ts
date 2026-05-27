@@ -38,8 +38,7 @@ import SafecityGallery6 from '@/assets/Hacktons/KBPCOE Satara/IMG_20260516_21095
 import SafecityGallery7 from '@/assets/Hacktons/KBPCOE Satara/IMG_20260516_211210.jpg'
 import SafecityGallery8 from '@/assets/Hacktons/KBPCOE Satara/IMG_20260517_133406.jpg'
 import SafecityGallery9 from '@/assets/Hacktons/KBPCOE Satara/IMG_20260517_133930.jpg'
-import SafecityGallery10 from '@/assets/Hacktons/KBPCOE Satara/IMG_20260517_134158~2.jpg'
-import SafecityPreview from '@/assets/projects/Safecity.png'
+import SafecityPreview from '@/assets/projects/Safecity.jpg'
 
 export const hackathons: HackathonItem[] = [
   {
@@ -115,8 +114,7 @@ export const hackathons: HackathonItem[] = [
       SafecityGallery6,
       SafecityGallery7,
       SafecityGallery8,
-      SafecityGallery9,
-      SafecityGallery10
+      SafecityGallery9
     ],
     certificates: [],
     learningOutcomes: [
