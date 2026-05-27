@@ -25,8 +25,86 @@ import techpravartanGallery2 from '@/assets/Hacktons/SBGOI Miraj/hackathon__team
 import techpravartanGallery3 from '@/assets/Hacktons/SBGOI Miraj/hackathon__teamcse__innovation__proudmoment__coll (3).jpg'
 import techpravartanGallery4 from '@/assets/Hacktons/SBGOI Miraj/IMG20251014175919.jpg'
 import techpravartanGallery5 from '@/assets/Hacktons/SBGOI Miraj/IMG20251014181219~2.jpg'
+import safeSpherePreview from '@/assets/projects/Safecity.png'
 
 export const hackathons: HackathonItem[] = [
+  {
+    id: 'safe-sphere-ai-hacknovate-2k26',
+    title: 'SafeSphere AI',
+    organizer: 'HACKNOVATE-2K26',
+    date: '2026',
+    duration: '30 Hours Hackathon',
+    teamName: 'SafeSphere Team',
+    achievement: 'Smart City Safety Prototype',
+    summary: 'A real-time AI-powered smart city safety platform that helps citizens and authorities identify, monitor, and respond to urban safety threats through one centralized command experience.',
+    problemStatement: 'Urban safety systems are fragmented, delaying crime reporting, threat visibility, and emergency response coordination.',
+    problemContext: 'Most incidents are underreported or resolved slowly because citizens and authorities often operate on disconnected platforms without live intelligence.',
+    solutionOverview: 'SafeSphere AI combines live crime mapping, predictive analytics, citizen incident reporting, and emergency prioritization into a centralized real-time dashboard.',
+    realWorldImpact: 'Improves transparency, enables faster data-driven emergency action, and helps authorities proactively focus on high-risk zones before incidents escalate.',
+    features: [
+      'Real-time crime heatmaps for hotspot visibility',
+      'AI risk prediction using historical and live patterns',
+      'Citizen incident reporting for crimes, emergencies, and civic issues',
+      'Emergency prioritization based on severity and frequency',
+      'Live command dashboard for city-wide monitoring',
+      'Interactive analytics and smart data visualization'
+    ],
+    techStack: [
+      'React.js',
+      'Next.js',
+      'Tailwind CSS',
+      'Framer Motion',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Predictive Risk Analysis',
+      'Crime Pattern Intelligence',
+      'Heatmap Algorithms',
+      'Mapbox / Google Maps API',
+      'Geolocation Services',
+      'Vercel'
+    ],
+    innovationPoints: [
+      'Predictive risk intelligence for proactive urban safety',
+      'Unified citizen-authority incident intelligence flow',
+      'Real-time safety visualization for faster decision-making'
+    ],
+    uiUxHighlights: [
+      'Command-dashboard-first interface design',
+      'Data-heavy yet responsive visual layout',
+      'Clear incident-to-action interaction flow'
+    ],
+    developmentProcess: [
+      'Designed and delivered under a strict 30-hour hackathon timeline.',
+      'Focused on integrating maps, analytics, and reporting into one coherent workflow.',
+      'Prioritized practical urban safety impact over feature bloat.'
+    ],
+    stats: [
+      { label: 'Duration', value: '30 Hours', detail: 'HACKNOVATE-2K26 build sprint' },
+      { label: 'Focus', value: 'Citizen Safety', detail: 'Emergency intelligence and response' },
+      { label: 'Category', value: 'Smart City', detail: 'AI-driven risk and incident platform' }
+    ],
+    heroImage: safeSpherePreview,
+    team: [
+      { name: 'Rohan Umbare patil', role: 'Team Member' }
+    ],
+    gallery: [
+      safeSpherePreview
+    ],
+    certificates: [],
+    learningOutcomes: [
+      'Building scalable real-time applications under extreme time constraints',
+      'Implementing AI-driven prediction systems',
+      'Designing responsive and data-heavy dashboards',
+      'Team collaboration in fast-paced development environments',
+      'Problem-solving with real-world impact in mind',
+      'Integrating maps, analytics, and live reporting systems'
+    ],
+    links: {
+      linkedin: 'https://www.linkedin.com/posts/rohan-umbare-patil-76b971358_most-developers-build-for-portfolios-we-ugcPost-7462140338510671873-Pg0e/?utm_source=chatgpt.com',
+      demo: 'https://hacknovate-xi.vercel.app/?utm_source=chatgpt.com',
+    }
+  },
   {
     id: 'rit-hackathon-2k26',
     title: 'RIT Hackathon 2K26 (National Level)',

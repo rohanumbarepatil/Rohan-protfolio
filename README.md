@@ -488,10 +488,10 @@ Before starting, ensure you have installed:
 
 ```bash
 # Clone using HTTPS (recommended)
-git clone https://github.com/rohan1785/rohan-portfolio.git
+git clone https://github.com/rohanumbarepatil/rohan-portfolio.git
 
 # OR clone using SSH (if you have SSH keys configured)
-git clone git@github.com:rohan1785/rohan-portfolio.git
+git clone git@github.com:rohanumbarepatil/rohan-portfolio.git
 
 # Navigate to project directory
 cd rohan-portfolio
@@ -717,13 +717,13 @@ This project is licensed under the **MIT License** - see the LICENSE file for de
 
 - 📧 **Email**: [umbarepatilrohan@gmail.com](mailto:umbarepatilrohan@gmail.com)
 - 💼 **LinkedIn**: [@rohan-umbare-patil](https://www.linkedin.com/in/rohan-umbare-patil-76b971358/)
-- 🐙 **GitHub**: [@rohan1785](https://github.com/rohan1785)
+- 🐙 **GitHub**: [@rohanumbarepatil](https://github.com/rohanumbarepatil)
 - 🐦 **Twitter**: [@RohanUpatil09](https://x.com/RohanUpatil09)
 
 ### Project Links
 
 - 🌐 **Live Portfolio**: [rohan-portfolio.vercel.app](https://rohans-portfolio-mu.vercel.app/)
-- 📚 **GitHub Repository**: [rohan-portfolio](https://github.com/rohan1785/rohan-portfolio)
+- 📚 **GitHub Repository**: [rohan-portfolio](https://github.com/rohanumbarepatil/rohan-portfolio)
 
 ---
 
@@ -731,8 +731,8 @@ This project is licensed under the **MIT License** - see the LICENSE file for de
 
 ### ⭐ If you found this portfolio interesting, please consider starring on GitHub!
 
-**[Star on GitHub](https://github.com/rohan1785/rohan-portfolio)** • **[Follow on LinkedIn](https://www.linkedin.com/in/rohan-umbare-patil-76b971358/)** • **[Get in Touch](mailto:umbarepatilrohan@gmail.com)**
+**[Star on GitHub](https://github.com/rohanumbarepatil/rohan-portfolio)** • **[Follow on LinkedIn](https://www.linkedin.com/in/rohan-umbare-patil-76b971358/)** • **[Get in Touch](mailto:umbarepatilrohan@gmail.com)**
 
-Made with ❤️ by [Rohan Umbarepatil](https://github.com/rohan1785)
+Made with ❤️ by [Rohan Umbarepatil](https://github.com/rohanumbarepatil)
 
 </div>

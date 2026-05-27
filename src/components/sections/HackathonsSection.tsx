@@ -29,8 +29,8 @@ export function HackathonsSection() {
 
           <SectionHeading
             eyebrow="Hackathons"
-            title="Story-driven case studies from fast-moving builds"
-            description="A recruiter-focused archive of hackathons, prototypes, teamwork, and demo-day storytelling. Newest experiences appear first."
+            title="Cinematic stories from intense build sessions"
+            description="A handpicked archive of hackathons, prototypes, team collaborations, and product experiments designed to highlight creativity under pressure."
           />
           
         </motion.div>

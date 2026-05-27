@@ -54,6 +54,7 @@ import imgArogya360 from '@/assets/projects/Arogya360.png'
 import imgTaskFlow from '@/assets/projects/TaskFlow.png'
 import imgIGap from '@/assets/projects/iGap.png'
 import imgAIMLNexus from '@/assets/projects/AIML Nexus.png'
+import imgSafeCity from '@/assets/projects/Safecity.png'
 
 // Achievement
 import hacktonWinner from '@/assets/website_gallery/Hackton Winner.jpg'
@@ -96,6 +97,9 @@ import magzineCommitee from '@/assets/website_gallery/Magzine Commitee.jpeg'
 import magzinePhotoshoot from '@/assets/website_gallery/Magzine Photoshoot.jpeg'
 import offerLetter from '@/assets/website_gallery/Offer_Letter.jpg'
 import projectPitch from '@/assets/website_gallery/Project Pitch.jpeg'
+import img404Agritech from '@/assets/website_gallery/404 & Agritech.jpg'
+import imgSataraHackton from '@/assets/website_gallery/Satara Hackton.jpg'
+import imgTeam404 from '@/assets/website_gallery/Team 404.jpg'
 
 export const sectionIds: SectionId[] = [
   'home',
@@ -125,7 +129,7 @@ export const navigation: NavItem[] = [
 
 export const socialLinks: SocialLink[] = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/rohan-umbare-patil-76b971358/', icon: 'linkedin' },
-  { label: 'GitHub', href: 'https://github.com/rohan1785', icon: 'github' },
+  { label: 'GitHub', href: 'https://github.com/rohanumbarepatil', icon: 'github' },
   { label: 'Twitter', href: 'https://x.com/RohanUpatil09', icon: 'twitter' },
   { label: 'Email', href: 'mailto:umbarepatilrohan@gmail.com', icon: 'mail' },
 ]
@@ -211,6 +215,70 @@ export const achievements: Achievement[] = [
 
 export const projects: ProjectItem[] = [
   {
+    slug: 'safe-sphere-ai',
+    title: 'SafeSphere AI',
+    category: 'Citizen Safety & Emergency Response',
+    image: imgSafeCity,
+    description:
+      'A real-time AI-powered Smart City Safety Platform designed to help citizens and authorities identify, monitor, and respond to urban safety threats efficiently through a centralized command dashboard.',
+    stack: [
+      'React.js',
+      'Next.js',
+      'Tailwind CSS',
+      'Framer Motion',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Predictive Risk Analysis',
+      'Crime Pattern Intelligence',
+      'Heatmap Algorithms',
+      'Mapbox / Google Maps API',
+      'Real-Time Data Visualization',
+      'Geolocation Services',
+      'Vercel',
+    ],
+    links: [
+      { label: 'Live', href: 'https://hacknovate-xi.vercel.app/?utm_source=chatgpt.com' },
+      { label: 'GitHub', href: 'https://github.com/rohanumbarepatil/Hacknovate' },
+      { label: 'Read More', href: '/projects/safe-sphere-ai' },
+    ],
+    about:
+      'Built during HACKNOVATE-2K26 in 30 hours, SafeSphere AI was created with the vision that technology should protect people. It bridges the communication and intelligence gap between citizens and authorities by combining incident reporting, real-time city visibility, and predictive safety insights in one platform.',
+    objectives: [
+      'Improve urban public safety using AI-driven insights.',
+      'Create transparency between citizens and authorities.',
+      'Enable faster emergency response prioritization.',
+      'Predict high-risk crime zones proactively.',
+      'Centralize civic incident reporting into one platform.',
+    ],
+    keyFeatures: [
+      'Real-Time Crime Heatmaps for dynamic hotspot visibility.',
+      'AI Risk Prediction using historical and live data patterns.',
+      'Citizen Incident Reporting for crimes and emergencies.',
+      'Emergency Prioritization based on severity and frequency.',
+      'Live Command Dashboard for city-wide monitoring.',
+      'Smart Data Visualization for faster decision-making.',
+    ],
+    learningOutcomes: [
+      'Building scalable real-time applications under extreme time constraints.',
+      'Implementing AI-driven prediction systems.',
+      'Designing responsive and data-heavy dashboards.',
+      'Team collaboration in fast-paced development environments.',
+      'Problem-solving with real-world impact in mind.',
+      'Integrating maps, analytics, and live reporting systems.',
+    ],
+    futureEnhancements: [
+      'AI-powered emergency alert notifications',
+      'Integration with government emergency systems',
+      'Real-time CCTV and IoT sensor integration',
+      'Voice-based emergency reporting',
+      'Mobile application support',
+      'Advanced ML models for predictive policing',
+      'Anonymous reporting with identity protection',
+      'Multilingual accessibility for wider adoption',
+    ],
+  },
+  {
     slug: 'smart-health-care-system',
     title: 'Arogya360 Smart Health Management System',
     category: 'Full Stack Healthcare Platform',
@@ -219,7 +287,7 @@ export const projects: ProjectItem[] = [
     stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS', 'Flask', 'Firebase', 'GitHub', 'VS Code', 'Firebase Hosting'],
     links: [
       { label: 'Live', href: 'https://smart-health-system-e3411.web.app/' },
-      { label: 'GitHub', href: 'https://github.com/rohan1785/Smart-Health-Care-System' },
+      { label: 'GitHub', href: 'https://github.com/rohanumbarepatil/Smart-Health-Care-System' },
       { label: 'Read More', href: '/projects/smart-health-care-system' },
     ],
     about: 'Arogya360 helps patients, doctors, clinics, and hospitals access essential healthcare services more efficiently. The system focuses on usability, accessibility, and digital healthcare awareness while creating a strong foundation for a complete healthcare ecosystem.',
@@ -331,7 +399,7 @@ export const projects: ProjectItem[] = [
     stack: ['HTML', 'CSS', 'JavaScript', 'Netlify', 'GitHub'],
     links: [
       { label: 'Live', href: 'https://rohanghabit.netlify.app/todolist.html' },
-      { label: 'GitHub', href: 'https://github.com/rohan1785/Ghabit' },
+      { label: 'GitHub', href: 'https://github.com/rohanumbarepatil/Ghabit' },
       { label: 'Read More', href: '/projects/taskflow' },
     ],
     about: 'TaskFlow is designed for students, developers, professionals, and individuals who want a fast, simple task manager without the complexity of larger productivity platforms.',
@@ -412,6 +480,9 @@ export const gallery: GalleryItem[] = [
   { title: 'Magzine Photoshoot', src: magzinePhotoshoot, alt: 'Magzine Photoshoot' },
   { title: 'Offer Letter', src: offerLetter, alt: 'Offer Letter' },
   { title: 'Project Pitch', src: projectPitch, alt: 'Project Pitch' },
+  { title: '404 & Agritech', src: img404Agritech, alt: '404 & Agritech' },
+  { title: 'Satara Hackton', src: imgSataraHackton, alt: 'Satara Hackton' },
+  { title: 'Team 404', src: imgTeam404, alt: 'Team 404' },
 ]
 
 export const skills: SkillGroup[] = [

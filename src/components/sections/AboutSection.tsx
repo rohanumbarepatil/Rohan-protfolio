@@ -71,13 +71,6 @@ export function AboutSection() {
         >
           <Reveal>
             <Card className="p-5 sm:p-6">
-              <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-white/55">Time Zone</h3>
-              <p className="mt-3 text-sm leading-7 text-white/70">I’m based in India and open to remote work and collaboration opportunities worldwide.</p>
-            </Card>
-          </Reveal>
-
-          <Reveal>
-            <Card className="p-5 sm:p-6">
               <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-white/55">Teck Stack</h3>
               <p className="mt-3 text-sm leading-7 text-white/70">
               React.js • JavaScript • Tailwind CSS • Node.js  • Firebase • Git & GitHub • Figma • Vercel • Responsive UI Development
