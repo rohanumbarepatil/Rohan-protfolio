@@ -12,9 +12,9 @@ import type {
 } from '@/types/portfolio'
 
 // Thumbnails
-import thumbCourse from '@/assets/Thumbnails/Course_Completion.jpeg'
-import thumbInternship from '@/assets/Thumbnails/Internship_Certificates.jpeg'
-import thumbTechEvents from '@/assets/Thumbnails/Technical_Events_Certificates.jpeg'
+import thumbCourse from '@/assets/Thumbnails/Course_Completion.png'
+import thumbInternship from '@/assets/Thumbnails/Internship_Certificates.png'
+import thumbTechEvents from '@/assets/Thumbnails/Technical_Events_Certificates.png'
 
 // Course Certifications
 import certAiAgent from '@/assets/Certification/Course_Certification/Ai Agent With UiPath.png'
