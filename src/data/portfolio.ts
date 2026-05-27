@@ -44,6 +44,7 @@ import certEureka from '@/assets/Certification/Technical_Events_Certificates/Eur
 import certHackaura from '@/assets/Certification/Technical_Events_Certificates/Hackaura 2026.jpeg'
 import certMsAzure from '@/assets/Certification/Technical_Events_Certificates/Microsoft Asure.jpeg'
 import certgitgithub from '@/assets/Certification/Technical_Events_Certificates/Git & Github Workshop.png'
+import certSataraHackton from '@/assets/Certification/Technical_Events_Certificates/Satara Hackton.jpg'
 import certRitHackton from '@/assets/Certification/Technical_Events_Certificates/RIT_Hackton_New.jpeg'
 import certTechnovation from '@/assets/Certification/Technical_Events_Certificates/Technovation_1_0_New.jpg'
 import certTechpravartan from '@/assets/Certification/Technical_Events_Certificates/Techpravartan_2025_New.jpg'
@@ -472,6 +473,6 @@ export const certifications: CertificationItem[] = [
     count: '9 Certificates inside',
     image: thumbTechEvents,
     alt: 'Technical Events Certificates',
-    images: [certArgueMind, certElectrovert, certEureka, certHackaura, certMsAzure, certgitgithub, certRitHackton, certTechnovation, certTechpravartan],
+    images: [certArgueMind, certElectrovert, certEureka, certHackaura, certMsAzure, certgitgithub, certSataraHackton, certRitHackton, certTechnovation, certTechpravartan],
   },
 ]
