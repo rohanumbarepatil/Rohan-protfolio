@@ -9,7 +9,6 @@ import { CertificationsSection } from '@/components/sections/CertificationsSecti
 import { ProjectsSection } from '@/components/sections/ProjectsSection'
 import { GallerySection } from '@/components/sections/GallerySection'
 import { SkillsSection } from '@/components/sections/SkillsSection'
-import { ResumeSection } from '@/components/sections/ResumeSection'
 import { ContactSection } from '@/components/sections/ContactSection'
 import { HackathonsSection } from '@/components/sections/HackathonsSection'
 import { updateSeo } from '@/lib/seo'
@@ -35,7 +34,6 @@ export function HomePage() {
       <CertificationsSection />
       <GallerySection />
       <SkillsSection />
-      <ResumeSection />
       <ContactSection />
     </SiteLayout>
   )
