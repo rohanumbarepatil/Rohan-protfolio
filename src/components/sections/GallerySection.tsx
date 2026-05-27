@@ -10,9 +10,11 @@ export function GallerySection() {
   const [spotlight, setSpotlight] = useState<{ x: number; y: number } | null>(null)
   const rowRef1 = useRef<HTMLDivElement>(null)
   const rowRef2 = useRef<HTMLDivElement>(null)
+  const rowRef3 = useRef<HTMLDivElement>(null)
 
-  const row1 = gallery.slice(0, Math.ceil(gallery.length / 2))
-  const row2 = gallery.slice(Math.ceil(gallery.length / 2))
+  const row1 = gallery.slice(0, Math.floor(gallery.length / 3))
+  const row2 = gallery.slice(Math.floor(gallery.length / 3), Math.floor(gallery.length * 2 / 3))
+  const row3 = gallery.slice(Math.floor(gallery.length * 2 / 3))
 
   const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect()
@@ -52,7 +54,7 @@ export function GallerySection() {
             ref={rowRef1}
             className="flex gap-4"
             animate={{ x: ['0%', '-50%'] }}
-            transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
+            transition={{ duration: 80, repeat: Infinity, ease: 'linear' }}
             style={{ width: 'max-content' }}
           >
             {[...row1, ...row1].map((item, index) => (
@@ -66,7 +68,7 @@ export function GallerySection() {
                 <img
                   src={item.src}
                   alt={item.alt}
-                  className="h-full w-full object-cover object-center grayscale transition duration-500 hover:grayscale-0"
+                  className="h-full w-full object-cover object-center transition duration-500 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 transition duration-300 hover:opacity-100" />
                 <div className="absolute bottom-0 left-0 p-3 opacity-0 transition duration-300 hover:opacity-100">
@@ -78,12 +80,12 @@ export function GallerySection() {
         </div>
 
         {/* Row 2 - scroll right */}
-        <div className="overflow-hidden">
+        <div className="mb-4 overflow-hidden">
           <motion.div
             ref={rowRef2}
             className="flex gap-4"
             animate={{ x: ['-50%', '0%'] }}
-            transition={{ duration: 45, repeat: Infinity, ease: 'linear' }}
+            transition={{ duration: 90, repeat: Infinity, ease: 'linear' }}
             style={{ width: 'max-content' }}
           >
             {[...row2, ...row2].map((item, index) => (
@@ -92,12 +94,43 @@ export function GallerySection() {
                 className="relative h-52 w-72 flex-shrink-0 cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-white/5"
                 whileHover={{ scale: 1.04, zIndex: 20 }}
                 transition={{ duration: 0.3 }}
-                onClick={() => setLightbox(Math.ceil(gallery.length / 2) + (index % row2.length))}
+                onClick={() => setLightbox(Math.floor(gallery.length / 3) + (index % row2.length))}
               >
                 <img
                   src={item.src}
                   alt={item.alt}
-                  className="h-full w-full object-cover object-center grayscale transition duration-500 hover:grayscale-0"
+                  className="h-full w-full object-cover object-center transition duration-500 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 transition duration-300 hover:opacity-100" />
+                <div className="absolute bottom-0 left-0 p-3 opacity-0 transition duration-300 hover:opacity-100">
+                  <p className="text-xs font-semibold text-white">{item.title}</p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+
+        {/* Row 3 - scroll left */}
+        <div className="overflow-hidden">
+          <motion.div
+            ref={rowRef3}
+            className="flex gap-4"
+            animate={{ x: ['0%', '-50%'] }}
+            transition={{ duration: 70, repeat: Infinity, ease: 'linear' }}
+            style={{ width: 'max-content' }}
+          >
+            {[...row3, ...row3].map((item, index) => (
+              <motion.div
+                key={`r3-${index}`}
+                className="relative h-52 w-72 flex-shrink-0 cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-white/5"
+                whileHover={{ scale: 1.04, zIndex: 20 }}
+                transition={{ duration: 0.3 }}
+                onClick={() => setLightbox(Math.floor(gallery.length * 2 / 3) + (index % row3.length))}
+              >
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="h-full w-full object-cover object-center transition duration-500 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 transition duration-300 hover:opacity-100" />
                 <div className="absolute bottom-0 left-0 p-3 opacity-0 transition duration-300 hover:opacity-100">
