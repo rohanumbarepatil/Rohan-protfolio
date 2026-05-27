@@ -216,7 +216,7 @@ export const achievements: Achievement[] = [
 export const projects: ProjectItem[] = [
   {
     slug: 'safe-sphere-ai',
-    title: 'SafeSphere AI',
+    title: 'Safecity AI',
     category: 'Citizen Safety & Emergency Response',
     image: imgSafeCity,
     description:
@@ -243,7 +243,7 @@ export const projects: ProjectItem[] = [
       { label: 'Read More', href: '/projects/safe-sphere-ai' },
     ],
     about:
-      'Built during HACKNOVATE-2K26 in 30 hours, SafeSphere AI was created with the vision that technology should protect people. It bridges the communication and intelligence gap between citizens and authorities by combining incident reporting, real-time city visibility, and predictive safety insights in one platform.',
+      'Built during HACKNOVATE-2K26 in 30 hours, Safecity AI was created with the vision that technology should protect people. It bridges the communication and intelligence gap between citizens and authorities by combining incident reporting, real-time city visibility, and predictive safety insights in one platform.',
     objectives: [
       'Improve urban public safety using AI-driven insights.',
       'Create transparency between citizens and authorities.',

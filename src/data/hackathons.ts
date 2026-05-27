@@ -6,6 +6,10 @@ import ritGallery1 from '@/assets/Hacktons/RIT Islampur/rithackathon__arogya360_
 import ritGallery2 from '@/assets/Hacktons/RIT Islampur/rithackathon__arogya360__squadmatrix__hackathonex (2).jpg'
 import ritGallery3 from '@/assets/Hacktons/RIT Islampur/rithackathon__arogya360__squadmatrix__hackathonex (3).jpg'
 import ritGallery4 from '@/assets/Hacktons/RIT Islampur/rithackathon__arogya360__squadmatrix__hackathonex (4).jpg'
+import ritGallery5 from '@/assets/Hacktons/RIT Islampur/IMG20260324141002.jpg'
+import ritGallery6 from '@/assets/Hacktons/RIT Islampur/IMG20260324164549.jpg'
+import ritGallery7 from '@/assets/Hacktons/RIT Islampur/IMG_9622-1.JPG'
+import ritGallery8 from '@/assets/Hacktons/RIT Islampur/rithackathon__arogya360__squadmatrix__hackathonex.jpg'
 
 import hackauraCert from '@/assets/Certification/Technical_Events_Certificates/Hackaura 2026.jpeg'
 import hackauraPreview from '@/assets/Hacktons/SRKIT Nipani/hackaura2026__hackathon__fullstackdevelopment__re (1).jpg'
@@ -25,21 +29,31 @@ import techpravartanGallery2 from '@/assets/Hacktons/SBGOI Miraj/hackathon__team
 import techpravartanGallery3 from '@/assets/Hacktons/SBGOI Miraj/hackathon__teamcse__innovation__proudmoment__coll (3).jpg'
 import techpravartanGallery4 from '@/assets/Hacktons/SBGOI Miraj/IMG20251014175919.jpg'
 import techpravartanGallery5 from '@/assets/Hacktons/SBGOI Miraj/IMG20251014181219~2.jpg'
-import safeSpherePreview from '@/assets/projects/Safecity.png'
+import SafecityGallery1 from '@/assets/Hacktons/KBPCOE Satara/IMG-20260518-WA0013(1).jpg'
+import SafecityGallery2 from '@/assets/Hacktons/KBPCOE Satara/IMG-20260518-WA0014(1).jpg'
+import SafecityGallery3 from '@/assets/Hacktons/KBPCOE Satara/IMG20260517051039.jpg'
+import SafecityGallery4 from '@/assets/Hacktons/KBPCOE Satara/IMG20260518190135.jpg'
+import SafecityGallery5 from '@/assets/Hacktons/KBPCOE Satara/IMG_20260516_154925.jpg'
+import SafecityGallery6 from '@/assets/Hacktons/KBPCOE Satara/IMG_20260516_210956.jpg'
+import SafecityGallery7 from '@/assets/Hacktons/KBPCOE Satara/IMG_20260516_211210.jpg'
+import SafecityGallery8 from '@/assets/Hacktons/KBPCOE Satara/IMG_20260517_133406.jpg'
+import SafecityGallery9 from '@/assets/Hacktons/KBPCOE Satara/IMG_20260517_133930.jpg'
+import SafecityGallery10 from '@/assets/Hacktons/KBPCOE Satara/IMG_20260517_134158~2.jpg'
+import SafecityPreview from '@/assets/projects/Safecity.png'
 
 export const hackathons: HackathonItem[] = [
   {
     id: 'safe-sphere-ai-hacknovate-2k26',
-    title: 'SafeSphere AI',
+    title: 'Safecity AI',
     organizer: 'HACKNOVATE-2K26',
     date: '2026',
     duration: '30 Hours Hackathon',
-    teamName: 'SafeSphere Team',
+    teamName: 'Safecity Team',
     achievement: 'Smart City Safety Prototype',
     summary: 'A real-time AI-powered smart city safety platform that helps citizens and authorities identify, monitor, and respond to urban safety threats through one centralized command experience.',
     problemStatement: 'Urban safety systems are fragmented, delaying crime reporting, threat visibility, and emergency response coordination.',
     problemContext: 'Most incidents are underreported or resolved slowly because citizens and authorities often operate on disconnected platforms without live intelligence.',
-    solutionOverview: 'SafeSphere AI combines live crime mapping, predictive analytics, citizen incident reporting, and emergency prioritization into a centralized real-time dashboard.',
+    solutionOverview: 'Safecity AI combines live crime mapping, predictive analytics, citizen incident reporting, and emergency prioritization into a centralized real-time dashboard.',
     realWorldImpact: 'Improves transparency, enables faster data-driven emergency action, and helps authorities proactively focus on high-risk zones before incidents escalate.',
     features: [
       'Real-time crime heatmaps for hotspot visibility',
@@ -84,12 +98,25 @@ export const hackathons: HackathonItem[] = [
       { label: 'Focus', value: 'Citizen Safety', detail: 'Emergency intelligence and response' },
       { label: 'Category', value: 'Smart City', detail: 'AI-driven risk and incident platform' }
     ],
-    heroImage: safeSpherePreview,
+    heroImage: SafecityPreview,
     team: [
-      { name: 'Rohan Umbare patil', role: 'Team Member' }
+      { name: 'Sanket Sutar', role: 'Backend Developer' },
+      { name: 'Onkar Jadhavar', role: 'UI/UX Designer' },
+      { name: 'Pranav Kharat', role: 'Documentation' },
+      { name: 'Rohan Umbare patil', role: 'Frontend Developer' }
     ],
     gallery: [
-      safeSpherePreview
+      SafecityPreview,
+      SafecityGallery1,
+      SafecityGallery2,
+      SafecityGallery3,
+      SafecityGallery4,
+      SafecityGallery5,
+      SafecityGallery6,
+      SafecityGallery7,
+      SafecityGallery8,
+      SafecityGallery9,
+      SafecityGallery10
     ],
     certificates: [],
     learningOutcomes: [
@@ -159,7 +186,11 @@ export const hackathons: HackathonItem[] = [
       ritGallery1,
       ritGallery2,
       ritGallery3,
-      ritGallery4
+      ritGallery4,
+      ritGallery5,
+      ritGallery6,
+      ritGallery7,
+      ritGallery8
     ],
     certificates: [
       ritHero
