@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { AppRoutes } from '@/routes/AppRoutes'
-import { LoadingScreen } from '@/components/layout/LoadingScreen'
+import { LOADER_DURATION_MS, LoadingScreen } from '@/components/layout/LoadingScreen'
 
 export function App() {
   const [loading, setLoading] = useState(true)
@@ -9,7 +9,7 @@ export function App() {
   useEffect(() => {
     const timer = window.setTimeout(() => {
       setLoading(false)
-    }, 2800)
+    }, LOADER_DURATION_MS)
 
     return () => window.clearTimeout(timer)
   }, [])

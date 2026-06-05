@@ -23,14 +23,32 @@ export function HeroSection() {
           <motion.div variants={stagger} initial="hidden" animate="visible" className="max-w-3xl">
             <motion.h1
               variants={fadeUp}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="mt-6 max-w-4xl text-5xl font-semibold tracking-[-0.06em] text-white sm:text-6xl lg:text-7xl xl:text-8xl"
             >
-              HI, I'M ROHAN
+              Rohan Umbarepatil
             </motion.h1>
 
-            <motion.p variants={fadeUp} className="mt-6 max-w-2xl text-2xl font-medium leading-8 text-white/80 sm:text-3xl">
-              {site.role}
+            <motion.p
+              variants={fadeUp}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.08 }}
+              className="mt-6 max-w-2xl text-2xl font-medium leading-8 text-white/80 sm:text-3xl"
+            >
+              Cinematic Developer
+            </motion.p>
+
+            <motion.p
+              variants={fadeUp}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.16 }}
+              className="mt-3 max-w-2xl text-xl font-medium leading-8 text-white/68 sm:text-2xl"
+            >
+              Creative Technologist
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-8 flex flex-wrap gap-3">

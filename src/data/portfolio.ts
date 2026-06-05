@@ -206,8 +206,8 @@ export const timeline: TimelineEntry[] = [
 
 export const achievements: Achievement[] = [
   {
-    title: 'Idea Pitching',
-    meta: 'Special Achievement • Oct 2025',
+    title: '4th Number in Idea Pitching',
+    meta: 'dea Pitching • Oct 2025',
     detail:
       'Recognized for presenting an innovative idea at the Idea Pitching Event during National Innovation Day 2025 at Sanjay Ghodawat Institute.',
     image: ideaPitchPreview,
@@ -215,7 +215,7 @@ export const achievements: Achievement[] = [
   },
   {
     title: 'Mini Hackathon Winner',
-    meta: 'Tech Event • Oct 2025',
+    meta: 'Hackton • Oct 2025',
     detail: 'Secured first place in the intensive competitive coding Mini Hackathon.',
     image: hacktonWinner,
     alt: 'Mini Hackathon Winner',
