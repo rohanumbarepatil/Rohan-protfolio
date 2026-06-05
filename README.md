@@ -36,8 +36,7 @@
 
 <!-- ── PROFILE VIEWS + FOLLOWERS ── -->
 <!-- [EDIT] Replace YOUR_USERNAME throughout this file with your actual GitHub handle -->
-<img src="https://komarev.com/ghpvc/?username=rohanumbarepatil&style=flat-square&color=7C3AED&label=profile+views" alt="profile views"/>
-&nbsp;
+<img src="https://komarev.com/ghpvc/?username=rohanumbarepatil&style=flat-square&color=7C3AED&label=Profile+Views" alt="Profile Views" />
 <img src="https://img.shields.io/github/followers/rohanumbarepatil?style=flat-square&color=7C3AED&label=followers" alt="followers"/>
 
 </div>
