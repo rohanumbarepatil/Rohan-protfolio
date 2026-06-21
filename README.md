@@ -185,8 +185,8 @@ I'm a developer who sits at the intersection of **engineering and design**  writ
 | 🏅 Achievement / Certification | 🏢 Issuer | 📅 Year |
 |:-------------------------------|:----------|:--------|
 | 🥇 **Mini Hackathon Winner** | Tech Parvartan Event | Oct 2025 |
-| 🤖 **Internshala Student Partner** | Internshala (ISP) | 2025 |
-
+| 🤖 **Top 5 In Idea Pitching** | MESA (SGI) | Oct 2025 |
+| 🚀 **Top 10 In Leaderbord** | IIT Bombay techfest Campus Ambassador | Jun 2026 |
 </div>
 
 ---
