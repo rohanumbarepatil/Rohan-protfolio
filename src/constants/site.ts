@@ -5,5 +5,5 @@ export const site = {
   tagline: 'Modern Scalable Web Applications',
   email: 'umbarepatilrohan@gmail.com',
   location: 'Earth',
-  resumeUrl: 'https://rohans-portfolio-mu.vercel.app/assets/Rohan_Resume.pdf',
+  resumeUrl: '/resume.pdf',
 }
