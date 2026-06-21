@@ -48,7 +48,7 @@
 ```typescript
 const rohan = {
   role      : "Full Stack Developer & AI Enthusiast",
-  education : "B.E. CSE — Sanjay Ghodawat Institute",
+  education : "B.Tech CSE — Sanjay Ghodawat Institute",
   location  : "Maharashtra, India 🇮🇳",
   focus     : ["Modern Web", "AI/ML", "UI/UX", "3D Web", "Cybersecurity"],
   currently : "Building impactful, real-world products with AI at the core",
