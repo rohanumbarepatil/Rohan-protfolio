@@ -40,7 +40,6 @@ export function LoadingScreen({ active }: LoadingScreenProps) {
 
     const update = (time: number) => {
       const progress = Math.min(1, (time - startTime) / LOADER_DURATION_MS)
-      setPercent(Math.round(progress * 100))
 
       if (progress < 1) {
         frame = window.requestAnimationFrame(update)
