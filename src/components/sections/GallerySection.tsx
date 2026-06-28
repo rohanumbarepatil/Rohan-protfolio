@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback } from 'react'
+import { createPortal } from 'react-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 import { SectionHeading } from '@/components/common/SectionHeading'
@@ -143,61 +144,64 @@ export function GallerySection() {
       </div>
 
       {/* Lightbox */}
-      <AnimatePresence>
-        {lightbox !== null && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
-            onClick={() => setLightbox(null)}
-          >
+      {typeof document !== 'undefined' && createPortal(
+        <AnimatePresence>
+          {lightbox !== null && (
             <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ duration: 0.25 }}
-              className="relative max-w-4xl w-full"
-              onClick={(e) => e.stopPropagation()}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
+              onClick={() => setLightbox(null)}
             >
-              <img
-                src={gallery[lightbox].src}
-                alt={gallery[lightbox].alt}
-                className="w-full max-h-[80vh] object-contain rounded-2xl"
-              />
+              <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.9, opacity: 0 }}
+                transition={{ duration: 0.25 }}
+                className="relative max-w-4xl w-full"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <img
+                  src={gallery[lightbox].src}
+                  alt={gallery[lightbox].alt}
+                  className="w-full max-h-[80vh] object-contain rounded-2xl"
+                />
 
-              <div className="absolute top-3 right-3 flex gap-2">
-                <span className="rounded-full bg-black/60 px-3 py-1 text-xs text-white/70">
-                  {lightbox + 1} / {gallery.length}
-                </span>
+                <div className="absolute top-3 right-3 flex gap-2">
+                  <span className="rounded-full bg-black/60 px-3 py-1 text-xs text-white/70">
+                    {lightbox + 1} / {gallery.length}
+                  </span>
+                  <button
+                    onClick={() => setLightbox(null)}
+                    className="rounded-full bg-black/60 p-1.5 text-white/80 hover:text-white"
+                  >
+                    <X className="h-4 w-4" />
+                  </button>
+                </div>
+
+                <div className="absolute bottom-3 left-0 right-0 text-center">
+                  <p className="text-sm font-semibold text-white/80">{gallery[lightbox].title}</p>
+                </div>
+
                 <button
-                  onClick={() => setLightbox(null)}
-                  className="rounded-full bg-black/60 p-1.5 text-white/80 hover:text-white"
+                  onClick={prev}
+                  className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-black/60 p-2 text-white/80 hover:text-white"
                 >
-                  <X className="h-4 w-4" />
+                  <ChevronLeft className="h-5 w-5" />
                 </button>
-              </div>
-
-              <div className="absolute bottom-3 left-0 right-0 text-center">
-                <p className="text-sm font-semibold text-white/80">{gallery[lightbox].title}</p>
-              </div>
-
-              <button
-                onClick={prev}
-                className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-black/60 p-2 text-white/80 hover:text-white"
-              >
-                <ChevronLeft className="h-5 w-5" />
-              </button>
-              <button
-                onClick={next}
-                className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-black/60 p-2 text-white/80 hover:text-white"
-              >
-                <ChevronRight className="h-5 w-5" />
-              </button>
+                <button
+                  onClick={next}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-black/60 p-2 text-white/80 hover:text-white"
+                >
+                  <ChevronRight className="h-5 w-5" />
+                </button>
+              </motion.div>
             </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          )}
+        </AnimatePresence>,
+        document.body
+      )}
     </SectionShell>
   )
 }

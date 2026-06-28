@@ -5,6 +5,7 @@ import { LOADER_DURATION_MS, LoadingScreen } from '@/components/layout/LoadingSc
 
 export function App() {
   const [loading, setLoading] = useState(true)
+  const [animationComplete, setAnimationComplete] = useState(false)
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
@@ -28,6 +29,12 @@ export function App() {
       <motion.div
         initial={{ opacity: 0, filter: 'blur(8px)' }}
         animate={loading ? { opacity: 0, filter: 'blur(8px)' } : { opacity: 1, filter: 'blur(0px)' }}
+        onAnimationComplete={() => {
+          if (!loading) {
+            setAnimationComplete(true)
+          }
+        }}
+        style={animationComplete ? { filter: 'none' } : undefined}
         transition={{ duration: 0.7, ease: 'easeOut' }}
       >
         <AppRoutes />
