@@ -36,6 +36,10 @@ import certWebDesign from '@/assets/Certification/Course_Certification/Web Desig
 import certAlfido from '@/assets/Certification/Internship_Certificate/ALFIDO offer letter.png'
 import certCognifyz from '@/assets/Certification/Internship_Certificate/Cognifyz Offer Letter.jpeg'
 import certInternshala from '@/assets/Certification/Internship_Certificate/Internshala Student Partner (ISP).jpeg'
+import certEcell from '@/assets/Certification/Internship_Certificate/E-cell IIT Bombay Campus Ambassedor.jpeg'
+import certGfg from '@/assets/Certification/Internship_Certificate/GFG Campus Mantri.jpeg'
+import certJavaIntern from '@/assets/Certification/Internship_Certificate/Java Full-stack Development Intern.jpeg'
+import certTechfest from '@/assets/Certification/Internship_Certificate/Techfest IIT Bombay Campus Ambassedor.jpeg'
 
 // Technical Events Certificates
 import certArgueMind from '@/assets/Certification/Technical_Events_Certificates/Argue_Mind_New.jpg'
@@ -563,12 +567,12 @@ export const certifications: CertificationItem[] = [
   },
   {
     title: 'Internship Certificates',
-    meta: 'Alfido Tech, Cognifyz, Internshala • 2025',
-    skills: ['C/C++', 'Data Science', 'Campus Outreach'],
-    count: '3 Certificates inside',
+    meta: 'Alfido Tech, Cognifyz, Internshala, GFG, E-Cell • 2025-2026',
+    skills: ['C/C++', 'Data Science', 'Campus Outreach', 'Full Stack Development', 'Community Building'],
+    count: '7 Certificates inside',
     image: thumbInternship,
     alt: 'Internship Certificates',
-    images: [certAlfido, certCognifyz, certInternshala],
+    images: [certAlfido, certCognifyz, certInternshala, certEcell, certGfg, certJavaIntern, certTechfest],
   },
   {
     title: 'Technical Events Certificates',
