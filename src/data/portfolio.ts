@@ -161,6 +161,30 @@ export const hobbies = [
 
 export const timeline: TimelineEntry[] = [
   {
+    title: 'E-Cell IIT Bombay Campus Ambassador',
+    organization: 'E-Cell IIT Bombay',
+    period: '30 June 2026 – Present',
+    description: 'Representing E-Cell IIT Bombay as an official Campus Ambassador, promoting entrepreneurship, startup culture, innovation programs, workshops, and national-level initiatives while building leadership, communication, networking, and community engagement skills.',
+  },
+  {
+    title: 'Campus Mantri',
+    organization: 'GeeksforGeeks',
+    period: '10 June 2026 – Present',
+    description: 'Serving as the official Campus Mantri, leading technical community initiatives, promoting learning opportunities, organizing student engagement activities, and helping build a stronger coding culture within the campus.',
+  },
+  {
+    title: 'Campus Ambassador',
+    organization: 'Techfest IIT Bombay',
+    period: '1 June 2026 – December 2027',
+    description: 'Representing Techfest IIT Bombay as an Official Campus Ambassador by promoting innovation, technology events, student participation, workshops, and national-level technical initiatives across the campus community.',
+  },
+  {
+    title: 'Java Full Stack Development Intern',
+    organization: 'Kinetrexa Software Pvt. Ltd.',
+    period: '5 June 2026 – 5 July 2026',
+    description: 'Worked as a Java Full Stack Development Intern, contributing to real-world software development projects while gaining hands-on experience in Java, backend development, frontend technologies, debugging, testing, and software engineering best practices.',
+  },
+  {
     title: 'Magazine Technical Incharge',
     organization: 'SANJAY GHODAWAT INSTITUTE',
     period: 'Present',

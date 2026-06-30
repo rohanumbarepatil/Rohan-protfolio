@@ -2,21 +2,32 @@ import { ArrowUpRight } from 'lucide-react'
 import { socialLinks } from '@/data/portfolio'
 
 export function Footer() {
+  const currentYear = new Date().getFullYear()
+  
   return (
-    <footer className="border-t border-white/6 py-10 text-white/60">
-      <div className="section-shell flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-        <p className="max-w-xl text-sm leading-6 tracking-[-0.01em] text-white/52">© Rohan_Umbarepatil. All rights reserved.</p>
-        <div className="flex flex-wrap items-center gap-4 text-sm">
-          {socialLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="inline-flex items-center gap-1 text-white/60 transition-colors duration-300 hover:text-white"
-            >
-              {link.label}
-              <ArrowUpRight className="h-4 w-4" />
-            </a>
-          ))}
+    <footer className="border-t border-white/5 py-12">
+      <div className="mx-auto max-w-5xl px-6 md:px-8">
+        <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
+          
+          <div className="text-sm text-white/50">
+            © {currentYear} Rohan Umbarepatil. All rights reserved.
+          </div>
+
+          <div className="flex flex-wrap items-center gap-6">
+            {socialLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="group flex items-center gap-1.5 text-sm text-white/50 transition-colors duration-300 hover:text-white"
+              >
+                {link.label}
+                <ArrowUpRight className="h-3.5 w-3.5 opacity-50 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100" />
+              </a>
+            ))}
+          </div>
+
         </div>
       </div>
     </footer>

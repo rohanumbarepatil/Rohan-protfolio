@@ -4,8 +4,10 @@ import { SectionShell } from '@/components/layout/SectionShell'
 import { SectionHeading } from '@/components/common/SectionHeading'
 import { hackathons } from '@/data/hackathons'
 import { HackathonShowcase } from '@/components/hackathons/HackathonShowcase'
-import { Clapperboard, Sparkles } from 'lucide-react'
+import { HackathonCard } from '@/components/hackathons/HackathonCard'
+import { Clapperboard } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { cn } from '@/utils/cn'
 
 export function HackathonsSection() {
   if (!hackathons || hackathons.length === 0) return null
@@ -37,47 +39,56 @@ export function HackathonsSection() {
             title="Cinematic stories from intense build sessions"
             description="A handpicked archive of hackathons, prototypes, team collaborations, and product experiments designed to highlight creativity under pressure."
           />
-          
         </motion.div>
       </div>
 
       <div className="w-full">
+        {/* Featured Hackathon uses cinematic layout */}
         <HackathonShowcase
           key={hackathons[0].id}
           hackathon={hackathons[0]}
           index={0}
         />
 
-        {remainingHackathons.length > 0 && (
-          <div className="flex justify-center py-10 sm:py-12">
-            <Button
-              type="button"
-              variant="secondary"
-              onClick={() => setShowAllHackathons((current) => !current)}
-              className="min-w-[180px]"
-            >
-              {showAllHackathons ? 'Show Less' : 'More Hackathons'}
-            </Button>
-          </div>
-        )}
-
-        <AnimatePresence initial={false}>
-          {showAllHackathons &&
-            remainingHackathons.map((hackathon, index) => (
+        {/* Remaining Hackathons uses Project Grid layout */}
+        <motion.div layout className="max-w-7xl mx-auto px-6">
+          <AnimatePresence initial={false}>
+            {showAllHackathons && (
               <motion.div
-                key={hackathon.id}
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 24, transition: { duration: 0.2 } }}
-                transition={{ duration: 0.35, ease: 'easeOut' }}
+                layout
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.3, ease: 'easeInOut' }}
+                className={cn(
+                  'grid gap-6 transition-all duration-300 pt-16',
+                  'grid-cols-1 md:grid-cols-2 xl:grid-cols-3'
+                )}
               >
-                <HackathonShowcase
-                  hackathon={hackathon}
-                  index={index + 1}
-                />
+                {remainingHackathons.map((hackathon, index) => (
+                  <HackathonCard
+                    key={hackathon.id}
+                    hackathon={hackathon}
+                    index={index}
+                  />
+                ))}
               </motion.div>
-            ))}
-        </AnimatePresence>
+            )}
+          </AnimatePresence>
+
+          {remainingHackathons.length > 0 && (
+            <motion.div layout className="flex justify-center py-10 sm:py-16">
+              <Button
+                type="button"
+                variant="secondary"
+                onClick={() => setShowAllHackathons((current) => !current)}
+                className="min-w-[170px]"
+              >
+                {showAllHackathons ? 'Show Less' : 'More Hackathons'}
+              </Button>
+            </motion.div>
+          )}
+        </motion.div>
       </div>
     </SectionShell>
   )
