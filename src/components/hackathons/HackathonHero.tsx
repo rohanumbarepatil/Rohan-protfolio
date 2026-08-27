@@ -2,6 +2,8 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import type { HackathonItem } from '@/types/portfolio'
 import { ArrowUpRight, Award, CalendarDays, Clock, Github, Globe, Linkedin, Users } from 'lucide-react'
+import '../projects/btn-read-more.css'
+import '../projects/btn-live-demo.css'
 
 interface Props {
   hackathon: HackathonItem
@@ -68,10 +70,14 @@ export function HackathonHero({ hackathon, readMoreHref }: Props) {
                 href={hackathon.links.demo}
                 target="_blank"
                 rel="noreferrer"
-                className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-transform duration-300 hover:-translate-y-0.5"
+                className="inline-flex items-center"
               >
-                Live Demo
-                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                <button className="btn-live-demo">
+                  <svg className="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
+                  </svg>
+                  Live Demo
+                </button>
               </a>
             ) : null}
             {hackathon.links.github ? (
@@ -108,9 +114,46 @@ export function HackathonHero({ hackathon, readMoreHref }: Props) {
             {readMoreHref ? (
               <Link
                 to={readMoreHref}
-                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-gray-200 transition-colors hover:bg-white/10"
+                className="inline-flex items-center"
               >
-                Read More
+                <div className="btn-read-more-wrapper">
+                  <button className="btn-read-more">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      className="icon"
+                    >
+                      <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
+                      <g
+                        strokeLinejoin="round"
+                        strokeLinecap="round"
+                        id="SVGRepo_tracerCarrier"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          fill="#000000"
+                          d="M14.2199 21.63C13.0399 21.63 11.3699 20.8 10.0499 16.83L9.32988 14.67L7.16988 13.95C3.20988 12.63 2.37988 10.96 2.37988 9.78001C2.37988 8.61001 3.20988 6.93001 7.16988 5.60001L15.6599 2.77001C17.7799 2.06001 19.5499 2.27001 20.6399 3.35001C21.7299 4.43001 21.9399 6.21001 21.2299 8.33001L18.3999 16.82C17.0699 20.8 15.3999 21.63 14.2199 21.63ZM7.63988 7.03001C4.85988 7.96001 3.86988 9.06001 3.86988 9.78001C3.86988 10.5 4.85988 11.6 7.63988 12.52L10.1599 13.36C10.3799 13.43 10.5599 13.61 10.6299 13.83L11.4699 16.35C12.3899 19.13 13.4999 20.12 14.2199 20.12C14.9399 20.12 16.0399 19.13 16.9699 16.35L19.7999 7.86001C20.3099 6.32001 20.2199 5.06001 19.5699 4.41001C18.9199 3.76001 17.6599 3.68001 16.1299 4.19001L7.63988 7.03001Z"
+                        ></path>
+                        <path
+                          fill="#000000"
+                          d="M10.11 14.4C9.92005 14.4 9.73005 14.33 9.58005 14.18C9.29005 13.89 9.29005 13.41 9.58005 13.12L13.16 9.53C13.45 9.24 13.93 9.24 14.22 9.53C14.51 9.82 14.51 10.3 14.22 10.59L10.64 14.18C10.5 14.33 10.3 14.4 10.11 14.4Z"
+                        ></path>
+                      </g>
+                    </svg>
+                    <p className="text">
+                      <span style={{ transitionDuration: '100ms' }}>R</span>
+                      <span style={{ transitionDuration: '150ms' }}>e</span>
+                      <span style={{ transitionDuration: '200ms' }}>a</span>
+                      <span style={{ transitionDuration: '250ms' }}>d</span>
+                      <span className="tab"></span>
+                      <span style={{ transitionDuration: '350ms' }}>M</span>
+                      <span style={{ transitionDuration: '400ms' }}>o</span>
+                      <span style={{ transitionDuration: '450ms' }}>r</span>
+                      <span style={{ transitionDuration: '500ms' }}>e</span>
+                    </p>
+                  </button>
+                </div>
               </Link>
             ) : null}
           </motion.div>

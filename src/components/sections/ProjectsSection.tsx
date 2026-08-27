@@ -37,14 +37,13 @@ export function ProjectsSection() {
 
         {canToggleProjects && (
           <div className="flex justify-center pt-8 sm:pt-10">
-            <Button
+            <button
               type="button"
-              variant="secondary"
               onClick={() => setShowAllProjects((current) => !current)}
-              className="min-w-[170px]"
+              className="px-8 py-2 text-white font-bold text-sm md:text-base rounded-full shadow-lg transition-all transform bg-transparent border-2 border-white/20 hover:scale-105 hover:border-green-600 hover:shadow-green-500/50 hover:shadow-2xl focus:outline-none"
             >
               {showAllProjects ? 'Show Less' : 'More Projects'}
-            </Button>
+            </button>
           </div>
         )}
       </motion.div>

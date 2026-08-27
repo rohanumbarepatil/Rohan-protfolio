@@ -78,14 +78,13 @@ export function HackathonsSection() {
 
           {remainingHackathons.length > 0 && (
             <motion.div layout className="flex justify-center py-10 sm:py-16">
-              <Button
+              <button
                 type="button"
-                variant="secondary"
                 onClick={() => setShowAllHackathons((current) => !current)}
-                className="min-w-[170px]"
+                className="px-8 py-2 text-white font-bold text-sm md:text-base rounded-full shadow-lg transition-all transform bg-transparent border-2 border-white/20 hover:scale-105 hover:border-green-600 hover:shadow-green-500/50 hover:shadow-2xl focus:outline-none"
               >
                 {showAllHackathons ? 'Show Less' : 'More Hackathons'}
-              </Button>
+              </button>
             </motion.div>
           )}
         </motion.div>

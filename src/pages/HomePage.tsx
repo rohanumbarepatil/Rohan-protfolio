@@ -7,7 +7,6 @@ import { ExperienceSection } from '@/components/sections/ExperienceSection'
 import { AchievementsSection } from '@/components/sections/AchievementsSection'
 import { CertificationsSection } from '@/components/sections/CertificationsSection'
 import { ProjectsSection } from '@/components/sections/ProjectsSection'
-import { ProfilesSection } from '@/components/sections/ProfilesSection'
 import { GallerySection } from '@/components/sections/GallerySection'
 import { SkillsSection } from '@/components/sections/SkillsSection'
 import { ContactSection } from '@/components/sections/ContactSection'
@@ -29,7 +28,6 @@ export function HomePage() {
       <AboutSection />
       <EducationSection />
       <ProjectsSection />
-      <ProfilesSection />
       <ExperienceSection />
       <HackathonsSection />
       <AchievementsSection />
