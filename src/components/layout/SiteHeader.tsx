@@ -64,19 +64,25 @@ export function SiteHeader() {
       </div>
 
       {menuOpen && (
-        <div className="border-t border-white/8 bg-[#050505]/95 px-4 py-4 lg:hidden">
-          <div className="section-shell grid gap-2 max-h-[80vh] overflow-y-auto">
+        <div className="border-t border-white/8 bg-[#050505]/95 backdrop-blur-xl lg:hidden shadow-2xl">
+          <div className="flex flex-col px-6 py-2 max-h-[80vh] overflow-y-auto">
             {navigation.map((item) => (
               <a
                 key={item.label}
                 href={pathname === '/' ? item.href : `/${item.href}`}
                 onClick={(e) => handleScroll(e, item.href)}
                 className={cn(
-                  'rounded-2xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-white/80 transition hover:bg-white/10',
-                  activeHref === item.href && 'bg-white text-black',
+                  'group flex items-center justify-between py-4 text-base tracking-wide transition-all duration-300',
+                  '[&:not(:last-child)]:border-b [&:not(:last-child)]:border-white/5',
+                  activeHref === item.href 
+                    ? 'text-white font-medium' 
+                    : 'text-white/50 font-normal hover:text-white/90 active:bg-white/[0.02]'
                 )}
               >
-                {item.label}
+                <span>{item.label}</span>
+                {activeHref === item.href && (
+                  <span className="h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,1)]" />
+                )}
               </a>
             ))}
           </div>

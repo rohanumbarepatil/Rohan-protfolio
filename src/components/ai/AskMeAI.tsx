@@ -72,6 +72,9 @@ export function AskMeAI() {
       const data = await response.json()
 
       if (!response.ok) {
+        if (response.status === 429) {
+          throw new Error('API Quota Exceeded. Please try again in a minute.');
+        }
         throw new Error(data?.error || 'Unable to generate response.')
       }
 
@@ -84,15 +87,16 @@ export function AskMeAI() {
             'I could not generate an answer right now.',
         },
       ])
-    } catch (error) {
+    } catch (error: any) {
       console.error('Talk to my portfolio error:', error)
 
       setMessages((current) => [
         ...current,
         {
           role: 'assistant',
-          content:
-            "Sorry, I couldn't process that right now. Please try again.",
+          content: error?.message === 'API Quota Exceeded. Please try again in a minute.' 
+            ? "Google Gemini API limit reached! Please wait a minute and try again."
+            : "Sorry, I couldn't process that right now. Please try again.",
         },
       ])
     } finally {
