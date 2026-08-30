@@ -13,8 +13,20 @@ export function SiteHeader() {
 
   const activeHref = useMemo(() => `#${activeSection}`, [activeSection])
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith('#') && pathname === '/') {
+      e.preventDefault();
+      const targetId = href.substring(1);
+      const elem = document.getElementById(targetId);
+      if (elem) {
+        elem.scrollIntoView({ behavior: 'smooth' });
+      }
+      closeMenu();
+    }
+  };
+
   return (
-    <header className="sticky top-0 z-50 border-b border-white/8 bg-[#050505]/70 backdrop-blur-xl">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/8 bg-[#050505]/70 backdrop-blur-xl">
       <div className="section-shell flex h-20 items-center justify-between gap-4">
         <a href="#home" className="group flex items-center gap-3">
           <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm font-semibold tracking-[0.2em] text-white">
@@ -30,6 +42,7 @@ export function SiteHeader() {
             <a
               key={item.label}
               href={pathname === '/' ? item.href : `/${item.href}`}
+              onClick={(e) => handleScroll(e, item.href)}
               className={cn(
                 'rounded-full px-4 py-2 text-sm transition duration-300 hover:bg-white/8 hover:text-white',
                 activeHref === item.href && 'bg-white text-black',
@@ -56,8 +69,8 @@ export function SiteHeader() {
             {navigation.map((item) => (
               <a
                 key={item.label}
-                href={item.href}
-                onClick={closeMenu}
+                href={pathname === '/' ? item.href : `/${item.href}`}
+                onClick={(e) => handleScroll(e, item.href)}
                 className={cn(
                   'rounded-2xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-white/80 transition hover:bg-white/10',
                   activeHref === item.href && 'bg-white text-black',
