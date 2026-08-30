@@ -9,7 +9,7 @@ type Message = {
   content: string
 }
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8787'
+const API_URL = import.meta.env.VITE_API_URL || 'https://rohan-protfolio.onrender.com'
 
 const suggestedQuestions = [
   'Who is Rohan?',

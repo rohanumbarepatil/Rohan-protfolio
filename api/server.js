@@ -80,7 +80,7 @@ const app = express()
 
 app.use(
   cors({
-    origin: true,
+    origin: ['http://localhost:5173', 'https://rohan-protfolio-sepia.vercel.app'],
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type'],
   })
