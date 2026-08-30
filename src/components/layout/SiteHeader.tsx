@@ -14,17 +14,7 @@ export function SiteHeader() {
 
   const activeHref = useMemo(() => `#${activeSection}`, [activeSection])
 
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href.startsWith('#') && pathname === '/') {
-      e.preventDefault();
-      const targetId = href.substring(1);
-      const elem = document.getElementById(targetId);
-      if (elem) {
-        elem.scrollIntoView({ behavior: 'smooth' });
-      }
-      closeMenu();
-    }
-  };
+
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/8 bg-[#050505]/70 backdrop-blur-xl">
@@ -43,7 +33,6 @@ export function SiteHeader() {
             <a
               key={item.label}
               href={pathname === '/' ? item.href : `/${item.href}`}
-              onClick={(e) => handleScroll(e, item.href)}
               className={cn(
                 'rounded-full px-4 py-2 text-sm transition duration-300 hover:bg-white/8 hover:text-white',
                 activeHref === item.href && 'bg-white text-black',
@@ -80,7 +69,7 @@ export function SiteHeader() {
                   transition={{ delay: i * 0.05 }}
                   key={item.label}
                   href={pathname === '/' ? item.href : `/${item.href}`}
-                  onClick={(e) => handleScroll(e, item.href)}
+                  onClick={closeMenu}
                   className={cn(
                     'text-lg font-medium tracking-wide text-white/50 transition-colors hover:text-white relative',
                     activeHref === item.href && 'text-white',
