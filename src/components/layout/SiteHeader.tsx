@@ -1,4 +1,5 @@
 import { Menu, X } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useMemo } from 'react'
 import { useLocation } from 'react-router-dom'
 import { navigation, sectionIds } from '@/data/portfolio'
@@ -63,25 +64,41 @@ export function SiteHeader() {
         </button>
       </div>
 
-      {menuOpen && (
-        <div className="border-t border-white/8 bg-[#050505]/95 px-4 py-4 lg:hidden">
-          <div className="section-shell grid gap-2 max-h-[80vh] overflow-y-auto">
-            {navigation.map((item) => (
-              <a
-                key={item.label}
-                href={pathname === '/' ? item.href : `/${item.href}`}
-                onClick={(e) => handleScroll(e, item.href)}
-                className={cn(
-                  'rounded-2xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-white/80 transition hover:bg-white/10',
-                  activeHref === item.href && 'bg-white text-black',
-                )}
-              >
-                {item.label}
-              </a>
-            ))}
-          </div>
-        </div>
-      )}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="border-t border-white/8 bg-[#050505]/95 px-6 py-6 lg:hidden overflow-hidden"
+          >
+            <div className="flex flex-col gap-6 max-h-[80vh] overflow-y-auto">
+              {navigation.map((item, i) => (
+                <motion.a
+                  initial={{ x: -20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: i * 0.05 }}
+                  key={item.label}
+                  href={pathname === '/' ? item.href : `/${item.href}`}
+                  onClick={(e) => handleScroll(e, item.href)}
+                  className={cn(
+                    'text-lg font-medium tracking-wide text-white/50 transition-colors hover:text-white relative',
+                    activeHref === item.href && 'text-white',
+                  )}
+                >
+                  <span className="relative z-10">{item.label}</span>
+                  {activeHref === item.href && (
+                    <motion.div
+                      layoutId="activeMobileNav"
+                      className="absolute -left-3 top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"
+                    />
+                  )}
+                </motion.a>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   )
 }
