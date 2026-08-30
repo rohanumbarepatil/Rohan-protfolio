@@ -1,5 +1,4 @@
 import { Menu, X } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion'
 import { useMemo } from 'react'
 import { useLocation } from 'react-router-dom'
 import { navigation, sectionIds } from '@/data/portfolio'
@@ -14,7 +13,17 @@ export function SiteHeader() {
 
   const activeHref = useMemo(() => `#${activeSection}`, [activeSection])
 
-
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith('#') && pathname === '/') {
+      e.preventDefault();
+      const targetId = href.substring(1);
+      const elem = document.getElementById(targetId);
+      if (elem) {
+        elem.scrollIntoView({ behavior: 'smooth' });
+      }
+      closeMenu();
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/8 bg-[#050505]/70 backdrop-blur-xl">
@@ -33,6 +42,7 @@ export function SiteHeader() {
             <a
               key={item.label}
               href={pathname === '/' ? item.href : `/${item.href}`}
+              onClick={(e) => handleScroll(e, item.href)}
               className={cn(
                 'rounded-full px-4 py-2 text-sm transition duration-300 hover:bg-white/8 hover:text-white',
                 activeHref === item.href && 'bg-white text-black',
@@ -53,41 +63,31 @@ export function SiteHeader() {
         </button>
       </div>
 
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            className="border-t border-white/8 bg-[#050505]/95 px-6 py-6 lg:hidden overflow-hidden"
-          >
-            <div className="flex flex-col gap-6 max-h-[80vh] overflow-y-auto">
-              {navigation.map((item, i) => (
-                <motion.a
-                  initial={{ x: -20, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: i * 0.05 }}
-                  key={item.label}
-                  href={pathname === '/' ? item.href : `/${item.href}`}
-                  onClick={closeMenu}
-                  className={cn(
-                    'text-lg font-medium tracking-wide text-white/50 transition-colors hover:text-white relative',
-                    activeHref === item.href && 'text-white',
-                  )}
-                >
-                  <span className="relative z-10">{item.label}</span>
-                  {activeHref === item.href && (
-                    <motion.div
-                      layoutId="activeMobileNav"
-                      className="absolute -left-3 top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"
-                    />
-                  )}
-                </motion.a>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {menuOpen && (
+        <div className="border-t border-white/8 bg-[#050505]/95 backdrop-blur-xl lg:hidden shadow-2xl">
+          <div className="flex flex-col px-6 py-2 max-h-[80vh] overflow-y-auto">
+            {navigation.map((item) => (
+              <a
+                key={item.label}
+                href={pathname === '/' ? item.href : `/${item.href}`}
+                onClick={(e) => handleScroll(e, item.href)}
+                className={cn(
+                  'group flex items-center justify-between py-4 text-base tracking-wide transition-all duration-300',
+                  '[&:not(:last-child)]:border-b [&:not(:last-child)]:border-white/5',
+                  activeHref === item.href 
+                    ? 'text-white font-medium' 
+                    : 'text-white/50 font-normal hover:text-white/90 active:bg-white/[0.02]'
+                )}
+              >
+                <span>{item.label}</span>
+                {activeHref === item.href && (
+                  <span className="h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,1)]" />
+                )}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </header>
   )
 }
