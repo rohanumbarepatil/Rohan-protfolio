@@ -42,7 +42,7 @@ const PORT = Number(process.env.PORT || 8787)
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY
 
-const MODEL_NAME = 'gemini-2.5-flash'
+const MODEL_NAME = 'gemini-3.6-flash'
 
 /*
 |--------------------------------------------------------------------------
@@ -78,9 +78,21 @@ const ai = new GoogleGenAI({
 
 const app = express()
 
+// Get allowed origins from environment variable, default to localhost for development
+const allowedOrigins = process.env.ALLOWED_ORIGINS 
+  ? process.env.ALLOWED_ORIGINS.split(',') 
+  : ['http://localhost:5173']
+
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'https://rohan-protfolio-sepia.vercel.app'],
+    origin: function (origin, callback) {
+      // Allow requests with no origin or from allowed origins
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true)
+      } else {
+        callback(new Error('Not allowed by CORS'))
+      }
+    },
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type'],
   })
