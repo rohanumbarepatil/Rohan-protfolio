@@ -42,7 +42,7 @@ const PORT = Number(process.env.PORT || 8787)
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY
 
-const MODEL_NAME = 'gemini-3.6-flash'
+const MODEL_NAME = 'gemini-2.5-flash'
 
 /*
 |--------------------------------------------------------------------------
