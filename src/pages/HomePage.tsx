@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { AskMeAI } from '@/components/ai/AskMeAI'
+
 import { SiteLayout } from '@/components/layout/SiteLayout'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { AboutSection } from '@/components/sections/AboutSection'
@@ -35,9 +35,6 @@ export function HomePage() {
       <CertificationsSection />
       <GallerySection />
       <SkillsSection />
-
-      <AskMeAI />
-
       <ContactSection />
     </SiteLayout>
   )
