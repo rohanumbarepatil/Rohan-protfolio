@@ -26,7 +26,7 @@ export function SiteHeader() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/8 bg-[#050505]/70 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/8 bg-[#050505]/70 backdrop-blur-xl">
       <div className="section-shell flex h-20 items-center justify-between gap-4">
         <a href="#home" className="group flex items-center gap-3">
           <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm font-semibold tracking-[0.2em] text-white">

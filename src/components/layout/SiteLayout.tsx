@@ -3,9 +3,9 @@ import { SiteHeader } from '@/components/layout/SiteHeader'
 
 export function SiteLayout({ children }: React.PropsWithChildren) {
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-[#050505] text-white">
+    <div className="relative min-h-screen bg-[#050505] text-white">
       <SiteHeader />
-      <main className="pt-20">{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   )
