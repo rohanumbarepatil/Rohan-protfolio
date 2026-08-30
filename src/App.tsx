@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { AppRoutes } from '@/routes/AppRoutes'
 import { LOADER_DURATION_MS, LoadingScreen } from '@/components/layout/LoadingScreen'
+import { AskMeAI } from '@/components/ai/AskMeAI'
 
 export function App() {
   const [loading, setLoading] = useState(true)
@@ -39,6 +40,7 @@ export function App() {
       >
         <AppRoutes />
       </motion.div>
+      <AskMeAI />
     </>
   )
 }

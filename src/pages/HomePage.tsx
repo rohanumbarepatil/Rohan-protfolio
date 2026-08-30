@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+
 import { SiteLayout } from '@/components/layout/SiteLayout'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { AboutSection } from '@/components/sections/AboutSection'
