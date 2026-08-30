@@ -234,8 +234,8 @@ export const timeline: TimelineEntry[] = [
 
 export const achievements: Achievement[] = [
   {
-    title: '4th Number in Idea Pitching',
-    meta: 'dea Pitching • Oct 2025',
+    title: 'Prize Winner in Idea Pitching',
+    meta: 'Idea Pitching • Oct 2025',
     detail:
       'Recognized for presenting an innovative idea at the Idea Pitching Event during National Innovation Day 2025 at Sanjay Ghodawat Institute.',
     image: ideaPitchPreview,

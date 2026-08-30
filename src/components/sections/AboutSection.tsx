@@ -54,7 +54,7 @@ export function AboutSection() {
             <Card className="h-full flex flex-col justify-center p-8 md:p-12 text-center bg-white/[0.02] border-white/5 hover:border-white/15 transition-all duration-500 group relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-b from-white/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative z-10 space-y-6">
-                <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-white/40">Who I Am</h3>
+                <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-white/40">Who Am I</h3>
                 <p className="text-xl md:text-3xl font-medium leading-relaxed text-white/90">
                   I combine clean architecture with product thinking to deliver elegant software solutions that solve real-world problems.
                 </p>
