@@ -146,6 +146,22 @@ ROHAN KNOWLEDGE BASE:
 ${knowledgeBase}
 `;
 
+const SYSTEM_INSTRUCTIONS = `
+You are Rohan's portfolio AI assistant.
+
+Answer questions using only the provided portfolio knowledge base.
+
+IMPORTANT RESPONSE FORMAT:
+- Return plain text only.
+- Do NOT use Markdown.
+- Do NOT use **bold**, *italics*, # headings, ### headings, backticks, bullet symbols, or Markdown links.
+- Do not use asterisks anywhere.
+- Write natural, readable paragraphs.
+- Use normal sentences and paragraph breaks.
+- Keep answers concise but informative.
+- Never invent information that is not present in the knowledge base.
+`;
+
 /*
 |--------------------------------------------------------------------------
 | Health Check
@@ -221,6 +237,14 @@ for (let attempt = 1; attempt <= 3; attempt++) {
         error: "Gemini returned an empty response.",
       });
     }
+
+    const cleanAnswer = answer
+  .replace(/\*\*/g, '')
+  .replace(/\*/g, '')
+  .replace(/^#{1,6}\s*/gm, '')
+  .replace(/^[-•]\s*/gm, '')
+  .replace(/`/g, '')
+  .trim();
 
     return res.json({
       answer,
