@@ -119,7 +119,7 @@ export function AskMeAI() {
             {/* Header */}
             <div className="flex items-center justify-between border-b border-white/10 bg-white/5 px-4 py-3">
               <div className="flex items-center gap-2 text-sm font-medium text-white">
-                <Sparkles className="h-4 w-4" />
+                <img src={chatbotImage} alt="AI" className="h-6 w-6 object-contain" />
                 Talk to my portfolio.
               </div>
               <button
@@ -143,8 +143,8 @@ export function AskMeAI() {
                       }`}
                     >
                       {message.role === 'assistant' && (
-                        <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 mt-auto">
-                          <Sparkles className="h-4 w-4 text-white/70" />
+                        <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 mt-auto overflow-hidden">
+                          <img src={chatbotImage} alt="AI" className="h-6 w-6 object-contain" />
                         </div>
                       )}
 
@@ -183,8 +183,8 @@ export function AskMeAI() {
 
                 {loading && (
                   <div className="flex gap-3 justify-start">
-                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 mt-auto">
-                      <Sparkles className="h-4 w-4 text-white/70" />
+                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 mt-auto overflow-hidden">
+                      <img src={chatbotImage} alt="AI" className="h-6 w-6 object-contain" />
                     </div>
                     <div className="flex items-center gap-1 rounded-2xl rounded-bl-sm border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/50 h-[44px]">
                       <span className="flex gap-1">
@@ -231,7 +231,7 @@ export function AskMeAI() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Talk to my portfolio."
       >
-        {isOpen ? <X className="h-5 w-5 sm:h-6 sm:w-6 text-white" /> : <img src={chatbotImage} alt="Talk to my portfolio." className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />}
+        {isOpen ? <X className="h-5 w-5 sm:h-6 sm:w-6 text-white" /> : <img src={chatbotImage} alt="Talk to my portfolio." className="w-8 h-8 sm:w-9 sm:h-9 object-contain" />}
       </motion.button>
     </div>
   )
