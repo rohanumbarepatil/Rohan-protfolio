@@ -1,6 +1,6 @@
 import { ArrowDownRight, Download } from 'lucide-react'
 import heroPng from '@/assets/hero.png'
-import idCard from '@/assets/id card/Picsart_26-05-12_01-49-32-323.png'
+import idCard from '@/assets/id card/Picsart_26-05-12_01-49-32-323.jpeg'
 import { motion } from 'framer-motion'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
