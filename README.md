@@ -1,263 +1,486 @@
-<!-- ============================================================
-     ROHAN'S GITHUB PROFILE README
-     Customizable sections marked with [EDIT] comment
-     ============================================================ -->
 
 <div align="center">
 
-<!-- ── HERO BANNER ── -->
-<!-- [EDIT] Replace the capsule URL with your own name/tagline if desired -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Hey,%20I'm%20Rohan%20&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20AI%20Enthusiast%20%7C%20Builder&descAlignY=58&descSize=18&descColor=a0aec0&animation=fadeIn" width="100%"/>
-
-<!-- ── TYPING ANIMATION ── -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3500&pause=1000&color=7C3AED&center=true&vCenter=true&multiline=false&width=600&lines=Building+things+that+matter;React+%C2%B7+Next.js+%C2%B7+Node+%C2%B7+Python+%C2%B7+Firebase;From+idea+to+deployed+product+%E2%9A%A1;AI+%2F+ML+%7C+Full+Stack+%7C+Open+Source)](https://git.io/typing-svg)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0F14,55:111827,100:1F2937&height=190&section=header&text=ROHAN&fontSize=54&fontColor=FFFFFF&fontAlignY=40&desc=FULL%20STACK%20DEVELOPER%20%20%C2%B7%20%20AI%2FML%20%20%C2%B7%20%20PRODUCT%20BUILDER&descAlignY=62&descSize=15&descColor=D1D5DB&animation=fadeIn" width="100%"/>
 
 <br/>
 
-<!-- ── SOCIAL BADGES ── -->
-<!-- [EDIT] Replace all URLs below with your actual profile links -->
-<a href="https://www.linkedin.com/in/rohan-umbare-patil-76b971358/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-<a href="https://x.com/RohanUpatil09" target="_blank">
-  <img src="https://img.shields.io/badge/X%20(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter/X"/>
-</a>
-<a href="https://rohan-protfolio-sepia.vercel.app/" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
-</a>
-<a href="mailto:umbarepatilrohan@gmail.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-</a>
-<a href="https://github.com/rohanumbarepatil" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-171515?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-</a>
+### I build real products across **Full Stack · AI/ML · Web Engineering**
 
-<br/><br/>
+<p>
+  <a href="https://github.com/rohanumbarepatil">
+    <img src="https://img.shields.io/badge/GitHub-111827?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="https://www.linkedin.com/in/rohan-umbare-patil-76b971358/">
+    <img src="https://img.shields.io/badge/LinkedIn-111827?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://rohan-protfolio-sepia.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-111827?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio"/>
+  </a>
+  <a href="mailto:umbarepatilrohan@gmail.com">
+    <img src="https://img.shields.io/badge/Email-111827?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <a href="https://x.com/RohanUpatil09">
+    <img src="https://img.shields.io/badge/X-111827?style=flat-square&logo=x&logoColor=white" alt="X"/>
+  </a>
+</p>
 
-<!-- ── PROFILE VIEWS + FOLLOWERS ── -->
-<!-- [EDIT] Replace YOUR_USERNAME throughout this file with your actual GitHub handle -->
-<img src="https://komarev.com/ghpvc/?username=rohanumbarepatil&style=flat-square&color=7C3AED&label=Profile+Views" alt="Profile Views" />
-<img src="https://img.shields.io/github/followers/rohanumbarepatil?style=flat-square&color=7C3AED&label=followers" alt="followers"/>
+<p>
+  <img src="https://komarev.com/ghpvc/?username=rohanumbarepatil&style=flat-square&color=6B7280&label=PROFILE+VIEWS" alt="Profile Views"/>
+  &nbsp;
+  <img src="https://img.shields.io/github/followers/rohanumbarepatil?style=flat-square&color=6B7280&label=FOLLOWERS" alt="Followers"/>
+</p>
 
 </div>
 
 ---
 
-## About Me
+## About
+
+I'm a **Computer Science Engineering student and full-stack developer** working across modern web development, AI/ML, and product-oriented engineering.
+
+I enjoy taking ideas from **concept → implementation → working product**, with experience building full-stack applications, AI/ML-powered features, civic technology, productivity tools, and hackathon prototypes.
+
+My strongest interests sit at the intersection of **software engineering, AI, and user experience**.
 
 ```typescript
 const rohan = {
-  role      : "Full Stack Developer & AI Enthusiast",
-  education : "B.Tech CSE — Sanjay Ghodawat Institute",
-  location  : "Maharashtra, India 🇮🇳",
-  focus     : ["Modern Web", "AI/ML", "UI/UX", "3D Web", "Cybersecurity"],
-  currently : "Building impactful, real-world products with AI at the core",
-  openTo    : ["Freelance", "Hackathons", "Open Source", "Collaborations"],
+  role: "Full Stack Developer & AI Enthusiast",
+  education: "B.E. CSE — Sanjay Ghodawat Institute",
+  location: "Maharashtra, India",
+
+  focus: [
+    "Full Stack Development",
+    "AI / ML",
+    "Modern Web",
+    "UI / UX",
+    "Product Engineering"
+  ],
+
+  building: "AI-powered and real-world software products",
+
+  openTo: [
+    "Freelance",
+    "Hackathons",
+    "Open Source",
+    "Collaborations"
+  ]
 };
-```
-
-I'm a developer who sits at the intersection of **engineering and design**  writing clean code while obsessing over great user experiences. I build full-stack products with modern web tech, explore AI/ML integrations, and love turning ambitious ideas into shipped software.
-
-- 🔭 Currently working on **AI-powered web platforms** and **real-world civic tech**
-- 🌱 Deepening expertise in **LLM integrations, Next.js App Router, and RL environments**
-- 🤝 Data Science Intern @ **Cognifyz Technologies**
-- 📣 Campus Ambassador @ **Internshala** (Student Partner)
-- ⚡ Hackathon builder — from concept to demo in 24–48 hrs
+````
 
 ---
 
-## Tech Stack
-
-<!-- ── LANGUAGES ── -->
-**Languages**
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-
-<!-- ── FRONTEND ── -->
-**Frontend**
-
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-
-<!-- ── BACKEND & DB ── -->
-**Backend & Database**
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-
-<!-- ── AI/ML ── -->
-**AI / ML**
-
-![Python](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white)
-
-<!-- ── TOOLS ── -->
-**Tools & Workflow**
-
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-171515?style=flat-square&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
-
----
-
-## Featured Projects
-
-<!-- ── PROJECT CARDS ── -->
-<!-- [EDIT] Replace GitHub repo links and live demo links with your actual URLs -->
+## Engineering Stack
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td valign="top" width="50%">
 
-### Arogya360 – Smart Health Management System
-> A React + Firebase civic health platform for municipal authorities to monitor hospital resources in real time, with ML-powered fraud detection (Isolation Forest) that auto-flags suspicious data spikes and triggers instant authority alerts.
+### Languages
 
-**Stack:** `React` `Node.js` `javascript` `Firebase`
+`JavaScript` `Python` `Java`
+`HTML5` `CSS3`
 
-[![Repo](https://img.shields.io/badge/Source-171515?style=flat-square&logo=github&logoColor=white)](https://github.com/rohanumbarepatil/Smart-Health-Care-System)
-[![Live](https://img.shields.io/badge/Live_Demo-7C3AED?style=flat-square&logo=vercel&logoColor=white)](https://smart-health-system-e3411.web.app/)
+### Frontend
 
-</td>
-<td width="50%" valign="top">
-
-### Nexora iGAP Digital Experience Platform
-> Static marketing website for iGAP Technologies Pvt. Ltd. showcasing their AI, data science, and software development services, projects, and academy courses.
-
-**Stack:** `HTML5` `CSS3` `Vanilla JavaScript` 
-
-[![Repo](https://img.shields.io/badge/Source-171515?style=flat-square&logo=github&logoColor=white)](https://github.com/Sanket-010s/NEXORA---iGAP-website-)
-[![Live](https://img.shields.io/badge/Live_Demo-7C3AED?style=flat-square&logo=vercel&logoColor=white)](https://nexora-i-gap-website.vercel.app/)
+`React` `Next.js` `Tailwind CSS`
 
 </td>
-</tr>
-<tr>
-<td width="50%" valign="top">
 
-### AIML Nexus – Gamified AI/ML Education Platform
-> An interactive AI/ML learning platform with quizzes, a Python playground, mini-games, an AI tutor, and a progress dashboard — built for Vibethon hackathon.
+<td valign="top" width="50%">
 
-**Stack:** `React` `Firebase` `Tailwind CSS` `OpenAI API`
+### Backend & Data
 
-[![Repo](https://img.shields.io/badge/Source-171515?style=flat-square&logo=github&logoColor=white)](https://github.com/Sanket-010s/vibethon-TeamSparten-spot11)
-[![Live](https://img.shields.io/badge/Live_Demo-7C3AED?style=flat-square&logo=vercel&logoColor=white)](https://vibethon-teamsparten-spot11.web.app/auth)
+`Node.js` `Express` `Firebase` `MongoDB`
 
-</td>
-<td width="50%" valign="top">
+### AI / ML
 
-### Ghabit
-> A zero-dependency, offline-first productivity suite combining habit tracking, task management, day planning, Pomodoro timer, and goal countdowns — all in a single vanilla web app.
-
-**Stack:** `HTML5` `CSS3` `Vanilla JavaScript` `Express.JS` `LocalStorage`
-
-[![Repo](https://img.shields.io/badge/Source-171515?style=flat-square&logo=github&logoColor=white)](https://github.com/rohanumbarepatil/Ghabit)
-[![Live](https://img.shields.io/badge/Live_Demo-7C3AED?style=flat-square&logo=vercel&logoColor=white)](https://rohanghabit.netlify.app/todolist.html)
+`scikit-learn` `Pandas` `NumPy` `OpenAI API`
 
 </td>
 </tr>
 </table>
 
-> 📌 More projects on my [repositories page](https://github.com/rohanumbarepatil?tab=repositories)
+### Tools
+
+<p>
+<img src="https://img.shields.io/badge/Git-111827?style=flat-square&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-111827?style=flat-square&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/VS_Code-111827?style=flat-square&logo=visualstudiocode&logoColor=white"/>
+<img src="https://img.shields.io/badge/Figma-111827?style=flat-square&logo=figma&logoColor=white"/>
+<img src="https://img.shields.io/badge/Vercel-111827?style=flat-square&logo=vercel&logoColor=white"/>
+<img src="https://img.shields.io/badge/Postman-111827?style=flat-square&logo=postman&logoColor=white"/>
+</p>
 
 ---
 
-## 🏆 Achievements & Certifications
+## Selected Projects
 
-<div align="center">
-  
-</div>
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+### Arogya360
+**Smart Health Management System**
+
+A civic-health platform built around hospital-resource monitoring and health-management workflows, combining a React/Firebase application with an ML-oriented fraud-detection component.
+
+**Stack**
+
+`React` `Node.js` `JavaScript` `Firebase`
 
 <br/>
 
-<div align="center">
+<a href="https://github.com/rohanumbarepatil/Smart-Health-Care-System">
+<img src="https://img.shields.io/badge/Source-111827?style=flat-square&logo=github&logoColor=white" alt="Source"/>
+</a>
+&nbsp;
+<a href="https://smart-health-system-e3411.web.app/">
+<img src="https://img.shields.io/badge/Live-475569?style=flat-square&logo=vercel&logoColor=white" alt="Live"/>
+</a>
 
-| 🏅 Achievement / Certification | 🏢 Issuer | 📅 Year |
-|:-------------------------------|:----------|:--------|
-| 🥇 **Mini Hackathon Winner** | Tech Parvartan Event | Oct 2025 |
-| 🤖 **Top 5 In Idea Pitching** | MESA (SGI) | Oct 2025 |
-| 🚀 **Top 10 In Leaderbord** | IIT Bombay techfest Campus Ambassador | Jun 2026 |
-</div>
+</td>
 
----
-## 📊 GitHub Analytics
+<td width="50%" valign="top">
 
-<div align="center">
-  <img width="49%" src="https://github-readme-stats-sigma-five.vercel.app/api?username=rohanumbarepatil&show_icons=true&theme=tokyonight&hide_border=true&title_color=00BFFF&icon_color=00BFFF&bg_color=0d1117" alt="GitHub Stats" />
-  <img width="40%" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=rohanumbarepatil&layout=compact&theme=tokyonight&hide_border=true&title_color=00BFFF&bg_color=0d1117" alt="Top Languages" />
-</div>
+### TechPravartan 2025 MVP
+**1st Place · 24-Hour Hackathon**
 
-<div align="center">
-  <img width="60%" src="https://github-readme-streak-stats.herokuapp.com/?user=rohanumbarepatil&theme=tokyonight&hide_border=true&background=0D1117&ring=00BFFF&fire=00BFFF&currStreakLabel=00BFFF" />
-</div>
+A full-stack web platform developed from scratch under a 24-hour hackathon constraint, combining frontend development, REST APIs, and rapid product iteration.
 
-<div align="center">
-  <img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=rohanumbarepatil&theme=tokyonight&bg_color=0d1117&hide_border=true&color=00BFFF&line=0077B5&point=ffffff" alt="Activity Graph" />
-</div>
+**Stack**
 
----
-
-## 🎓 Education
-
-<div align="center">
-
-| 🎓 Degree | 🏫 Institution | 📅 Year | 📊 Score |
-|:----------|:--------------|:--------|:---------|
-| **B.Tech – Computer Science Engineering** | Sanjay Ghodawat Institute, Kolhapur | 2024 – 2028 | *Current* |
-| **12th Grade (PCMB)** | Walchand College Of Arts And Science, Solapur | 2022 — 2024 | 60.2% |
-| **10th Grade (SSC)** | Vasantrao Gopinath Patil High School Nanduri, Tulajapur |2023 — 2024 | 89.80% |
-
-</div>
-
----
-
-## Highlights
-
-- 🏆 **Technoverse Techfest 2026** — Technical event organizer & coordinator, CSESA, Sanjay Ghodawat Institute
-- 🤖 **Cognifyz Technologies** — Data Science Intern; built ML pipelines and data analysis dashboards
-- 📣 **Internshala Student Partner** — Campus ambassador driving tech awareness and opportunity access
-- 🚀 **Hackathon Builder** — Shipped projects like NeuralQuest (AI/ML learning platform) and Arogya360 (civic health tech for Ulhasnagar Municipal Corporation) under 48-hour deadlines
-- 🌐 **Open Source Contributor** — Actively contributing to projects in the React and Python ecosystem
-
----
-
-## A Few Things About Me
-
-- I write cleaner code after midnight (unverified, but consistent)
-- I believe the best UI is one you don't notice — only feel
-- Every side project is a rehearsal for the startup I'll build someday
-- My debugging toolkit: `console.log`, rubber duck, strong chai ☕
-
----
-
-<div align="center">
-
-> *"First, solve the problem. Then, write the code."*
-> — Rohan
+`React.js` `JavaScript` `Tailwind CSS` `REST APIs`
 
 <br/>
 
-**Let's build something remarkable.**
+**Recognition:** 🥇 1st Place Winner
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+### AIML Nexus
+**Gamified AI/ML Education Platform**
+
+An interactive learning platform combining quizzes, a Python playground, mini-games, an AI tutor, and progress tracking, developed for the Vibethon hackathon.
+
+**Stack**
+
+`React` `Firebase` `Tailwind CSS` `OpenAI API`
+
+<br/>
+
+<a href="https://github.com/Sanket-010s/vibethon-TeamSparten-spot11">
+<img src="https://img.shields.io/badge/Source-111827?style=flat-square&logo=github&logoColor=white" alt="Source"/>
+</a>
+&nbsp;
+<a href="https://vibethon-teamsparten-spot11.web.app/auth">
+<img src="https://img.shields.io/badge/Live-475569?style=flat-square&logo=vercel&logoColor=white" alt="Live"/>
+</a>
+
+</td>
+
+<td width="50%" valign="top">
+
+### Employee Management System
+**Java Full-Stack Application**
+
+A full-stack application focused on employee-management workflows, RESTful APIs, database interaction, and backend development.
+
+**Stack**
+
+`Java` `Spring Boot` `MySQL` `JavaScript` `REST APIs`
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+### Nexora iGAP
+**Digital Experience Platform**
+
+A marketing website developed for **iGAP Technologies Pvt. Ltd.**, presenting its AI, data-science, software-development, project, and academy offerings.
+
+**Stack**
+
+`HTML5` `CSS3` `Vanilla JavaScript`
+
+<br/>
+
+<a href="https://github.com/Sanket-010s/NEXORA---iGAP-website-">
+<img src="https://img.shields.io/badge/Source-111827?style=flat-square&logo=github&logoColor=white" alt="Source"/>
+</a>
+&nbsp;
+<a href="https://nexora-i-gap-website.vercel.app/">
+<img src="https://img.shields.io/badge/Live-475569?style=flat-square&logo=vercel&logoColor=white" alt="Live"/>
+</a>
+
+</td>
+
+<td width="50%" valign="top">
+
+### Ghabit
+**Offline-First Productivity Suite**
+
+A lightweight productivity web application combining habit tracking, task management, day planning, Pomodoro sessions, and goal countdowns.
+
+**Stack**
+
+`HTML5` `CSS3` `Vanilla JavaScript` `Express.js` `LocalStorage`
+
+<br/>
+
+<a href="https://github.com/rohanumbarepatil/Ghabit">
+<img src="https://img.shields.io/badge/Source-111827?style=flat-square&logo=github&logoColor=white" alt="Source"/>
+</a>
+&nbsp;
+<a href="https://rohanghabit.netlify.app/todolist.html">
+<img src="https://img.shields.io/badge/Live-475569?style=flat-square&logo=vercel&logoColor=white" alt="Live"/>
+</a>
+
+</td>
+
+</tr>
+</table>
 
 <div align="center">
 
-[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/rohan-umbare-patil-76b971358/)
-&nbsp;
-[![Gmail](https://skillicons.dev/icons?i=gmail)](mailto:umbarepatilrohan@gmail.com)
-&nbsp;
-[![GitHub](https://skillicons.dev/icons?i=github)](https://github.com/rohanumbarepatil)
+<a href="https://github.com/rohanumbarepatil?tab=repositories">
+<strong>View all repositories →</strong>
+</a>
 
 </div>
+
+## Experience & Community
+
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+### Java Full Stack Developer Intern
+**Kinetrexa Software Pvt. Ltd.**
+
+`Jun 2026 – Jul 2026`
+
+Worked on full-stack software development using **Java, Spring Boot, and MySQL**, contributing to backend services, REST API development, database workflows, responsive interfaces, Git-based development, and software-engineering practices.
+
+</td>
+
+<td width="50%" valign="top">
+
+### Official Campus Ambassador
+**Techfest, IIT Bombay**
+
+`Jun 2026 – Present`
+
+Participating in technical-event outreach and student engagement as an official college ambassador for **Techfest, IIT Bombay**.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+### Data Science Intern
+**Cognifyz Technologies**
+
+Worked on **data-science and machine-learning related development**, including ML workflows and data analysis.
+
+</td>
+
+<td width="50%" valign="top">
+
+### Campus Mantri
+**GeeksforGeeks**
+
+Representing the student developer community and supporting **coding, technical learning, and student-engagement initiatives**.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+### Student Partner
+**Internshala**
+
+Contributed to **campus-level student outreach** and awareness around internship and learning opportunities.
+
+</td>
+
+<td width="50%" valign="top">
+
+### CSESA
+**Sanjay Ghodawat Institute**
+
+Contributing to **technical-community activities, event coordination, and student engagement** within the Computer Science & Engineering community.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+### Technoverse Techfest 2026
+
+Technical event organization and coordination through **CSESA**, contributing to the execution of a student-focused technical festival.
+
+</td>
+
+<td width="50%" valign="top">
+
+### Hackathon Builder
+
+Building and presenting software products under **short development timelines**, including full-stack and AI/ML-oriented projects.
+
+</td>
+
+</tr>
+</table>
+
+---
+
+## Recognition
+
+<div align="center">
+
+| Recognition / Achievement | Organization / Event | Details |
+|:---|:---|:---|
+| 🥇 **1st Place Winner** | TechPravartan 2025 | 24-hour Hackathon |
+| 🏆 **National Finalist** | HackAura 2026 | 4-person Engineering Team |
+| 📣 **Official College Ambassador** | Techfest, IIT Bombay | Student Outreach & Engagement |
+| 💻 **Java Full Stack Developer Intern** | Kinetrexa Software Pvt. Ltd. | Jun 2026 – Jul 2026 |
+| 🤝 **Campus Mantri** | GeeksforGeeks | Student Developer Community |
+| 🎓 **Student Partner** | Internshala | Campus Student Outreach |
+
 </div>
 
 ---
+
+## GitHub Overview
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/stats.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile/stats.svg">
+  <img src="./profile/stats.svg" width="49%" alt="GitHub Statistics">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/top-langs.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile/top-langs.svg">
+  <img src="./profile/top-langs.svg" width="40%" alt="Top Languages">
+</picture>
+
+<br/><br/>
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/rohanumbarepatil/rohanumbarepatil/output/activity-graph.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/rohanumbarepatil/rohanumbarepatil/output/activity-graph.svg"
+  />
+  <img
+    src="https://raw.githubusercontent.com/rohanumbarepatil/rohanumbarepatil/output/activity-graph.svg"
+    width="95%"
+    alt="GitHub Contribution Graph"
+  />
+</picture>
+
+</div>
+
+---
+
+## Education
+
+<div align="center">
+
+| Degree                                    | Institution                                             |    Period   |   Score |
+| :---------------------------------------- | :------------------------------------------------------ | :---------: | ------: |
+| **B.Tech · Computer Science Engineering** | Sanjay Ghodawat Institute, Kolhapur                     | 2024 – 2028 | Current |
+| **12th Grade · PCM**                     | Walchand College Of Arts And Science, Solapur           | 2022 – 2024 |   60.2% |
+| **10th Grade · SSC**                      | Vasantrao Gopinath Patil High School Nanduri, Tulajapur | 2023 – 2024 |  89.80% |
+
+</div>
+
+---
+
+## What I Care About
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+### Build
+
+Real products over
+toy implementations.
+
+</td>
+
+<td width="33%" align="center">
+
+### Learn
+
+AI/ML, modern web
+and deeper engineering.
+
+</td>
+
+<td width="33%" align="center">
+
+### Ship
+
+Turn ideas into
+working experiences.
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+### Let's build something useful.
+
+<br/>
+
+<a href="https://rohan-protfolio-sepia.vercel.app/">
+<img src="https://img.shields.io/badge/PORTFOLIO-111827?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio"/>
+</a>
+&nbsp;
+<a href="mailto:umbarepatilrohan@gmail.com">
+<img src="https://img.shields.io/badge/CONTACT-111827?style=flat-square&logo=gmail&logoColor=white" alt="Contact"/>
+</a>
+&nbsp;
+<a href="https://www.linkedin.com/in/rohan-umbare-patil-76b971358/">
+<img src="https://img.shields.io/badge/LINKEDIN-111827?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+
+<sub>Full Stack Development · AI/ML · Product Engineering</sub>
+
+</div>
+
+---
+
